@@ -3,7 +3,7 @@
 
 # 使用
 
->   `git clone https://github.com/Lobos/react-ui.git`
+>   `git clone https://github.com/react-design/react-ionic.git`
 
 >  使用方式...
 
