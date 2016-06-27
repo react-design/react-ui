@@ -4,7 +4,8 @@
 # 使用
 
 >   `git clone https://github.com/Lobos/react-ui.git`
->    使用方式...
+
+>  使用方式...
 
 # Components
 计划中的组件，后续应该会不断加入新的组件
