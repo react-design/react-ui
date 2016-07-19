@@ -1,0 +1,7 @@
+.*rc
+.*.yml
+.idea
+webpack.config.*
+docs
+example
+coverage
