@@ -48,3 +48,24 @@ Open url `http://127.0.0.1:8080/` in browser.
  - [ ] Searchbar 
  - [ ] ShareGroup
 # Change log
+
+
+## 项目结构
+```react-ui
+   |-- example  
+   |-- lib
+   |-- src  
+   |   |-- components  
+   |   |   |-- button 
+   |   |   |   |-- button.js
+   |   |   |   |-- index.js
+   |   |   |   `-- styles.less
+   |   |   |-- ...  
+   |   `-- index.js
+   |-- .babelrc
+   |-- .editorconfig
+   |-- .eslintrc
+   |-- .travis.yml
+   |-- package.json
+   `-- webpack.config.js
+```
