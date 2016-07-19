@@ -10,7 +10,14 @@ export default class ButtonDemo extends React.Component {
     render() {
         return (
             <Page className="button" title="Button" spacing>
-                <Button>按钮</Button>
+
+                <Button>default</Button><br/>
+                <Button type="info">info</Button><br/>
+                <Button type="primary">primary</Button><br/>
+                <Button type="warn">warn</Button><br/>
+                <Button type="danger">danger</Button><br/>
+                <hr/><br/>
+                <Button plain>default</Button><br/>
             </Page>
         );
     }

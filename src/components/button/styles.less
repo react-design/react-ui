@@ -1,9 +1,54 @@
-.b-div{
-
-	.button {
-	  	background: red;
-	  	color: yellow;
-	  	padding:10px;
-	}
+.f-btn{
+	position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.33333333;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow: hidden;
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
 }
 
+.f-btn:after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0,0,0,.2);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.f-btn-default{
+	background-color: #e6e6e6;
+	color:#333;
+}
+.f-btn-info{
+	background-color: #04be02;
+}
+.f-btn-primary{
+	background-color: #1385e5;
+}
+.f-btn-danger{
+	background-color: #ef4f4f;
+}
+.f-btn-warn{
+	background-color: #fa9f47;
+}

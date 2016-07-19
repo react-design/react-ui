@@ -4,12 +4,13 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var LessPluginCleanCSS = require('less-plugin-clean-css');
 
 module.exports = {
     context: path.join(__dirname, 'example'),
     entry: {
         js: './app.js',
-        vendor: ['react', 'react-router', 'react-dom', 'react-addons-css-transition-group']
+        vendor: ['react', 'classnames', 'react-router', 'react-dom', 'react-addons-css-transition-group']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -25,7 +26,7 @@ module.exports = {
                 test: /\.less$/,
                 loader: 'style!css!postcss!less'
             }, {
-                test: /\.css/,
+                test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style', 'css', 'postcss')
             }, {
                 test: /\.(png|jpg)$/,
@@ -38,14 +39,17 @@ module.exports = {
         new webpack.DefinePlugin({
             DEBUG: process.env.NODE_ENV !== 'production'
         }),
+        new ExtractTextPlugin("styles.css"),
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
         new webpack.optimize.UglifyJsPlugin({
+            extractCSS : true,
             sourceMap: false,
-            mangle: false
+            mangle: false,
+            minimize:true
         }),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'example/index.html')
-        }),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+        })
+        // new OpenBrowserPlugin({ url: 'http://localhost:8080' })
     ]
 };
