@@ -65,9 +65,7 @@ Open url `http://127.0.0.1:8080/` in browser.
    |-- .babelrc
    |-- .editorconfig
    |-- .eslintrc
-   |-- .gitignore
-   |-- .npmignore
    |-- .travis.yml
-   |-- .travis.yml
-   |-- .travis.yml
+   |-- package.json
+   `-- webpack.config.js
 ```
