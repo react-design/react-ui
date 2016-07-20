@@ -14,7 +14,8 @@ export default class Home extends React.Component {
         return (
             <div>
                 React - UI<br/>
-                <a href="#button"> button </a>
+                <a href="#button"> button </a><br/>
+                <a href="#icon"> icon </a>
             </div>
         );
     }

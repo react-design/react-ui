@@ -1,78 +1,80 @@
 {
-    "name": "react-ui",
-    "version": "0.4.0",
-    "description": "react ui",
-    "eslintConfig": {
-        "env": {
-          "browser": true,
-          "node": true
-        }
-    },
-    "main": "./lib",
-    "scripts": {
-        "start": "webpack-dev-server --hot --inline --progress --colors --port 8080",
-        "clean": "rimraf ./lib ./coverage",
-        "build": "npm run clean & babel ./src --out-dir ./lib",
-        "build:example": "rimraf ./dist && webpack",
-        "lint": "eslint \"src/**/*.@(js|jsx)\"",
-        "pretest": "npm run lint",
-        "test": "mocha --compilers js:babel-core/register --recursive",
-        "test:watch": "npm run test -- --watch",
-        "coverage": "npm run lint & istanbul cover _mocha -- --compilers js:babel-core/register --recursive"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/react-design/react-ui.git"
-    },
-    "keywords": [
-        "mobile",
-        "ui",
-        "framework",
-        "react"
-    ],
-    "author": "ymark",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/react-design/react-ui/issues"
-    },
-    "homepage": "https://github.com/react-design/react-ui",
-    "dependencies": {
-        "classnames": "^2.2.0"
-    },
-    "devDependencies": {
-        "autoprefixer": "^6.3.5",
-        "babel": "^5.8.23",
-        "babel-core": "^5.8.23",
-        "babel-eslint": "^4.1.6",
-        "babel-loader": "^5.3.2",
-        "css-loader": "^0.23.0",
-        "enzyme": "^1.1.0",
-        "eslint": "^1.10.3",
-        "eslint-plugin-react": "^3.11.3",
-        "extract-text-webpack-plugin": "^1.0.1",
-        "file-loader": "^0.8.5",
-        "history": "^1.17.0",
-        "html-webpack-plugin": "^2.14.0",
-        "istanbul": "^0.4.1",
-        "jsdom": "^8.4.0",
-        "less": "^2.5.3",
-        "less-loader": "^2.2.1",
-        "mocha": "^2.3.4",
-        "open-browser-webpack-plugin": "0.0.1",
-        "postcss-loader": "^0.8.2",
-        "react-addons-css-transition-group": "^0.14.7",
-        "react-addons-test-utils": "^0.14.3",
-        "react-dom": "^0.14.2",
-        "react-router": "^1.0.2",
-        "rimraf": "^2.4.3",
-        "sinon": "^1.17.2",
-        "style-loader": "^0.13.0",
-        "uglify-loader": "^1.2.0",
-        "url-loader": "^0.5.7",
-        "webpack": "^1.12.2",
-        "webpack-dev-server": "^1.12.1"
-    },
-    "peerDependencies": {
-        "react": "^0.14.2 || ^15.0.1"
+  "name": "react-ui",
+  "version": "0.4.0",
+  "description": "react ui",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
     }
+  },
+  "main": "./lib",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --progress --colors --port 8080",
+    "clean": "rimraf ./lib ./coverage",
+    "build": "npm run clean & babel ./src --out-dir ./lib",
+    "build:example": "rimraf ./dist && webpack",
+    "lint": "eslint \"src/**/*.@(js|jsx)\"",
+    "pretest": "npm run lint",
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm run test -- --watch",
+    "coverage": "npm run lint & istanbul cover _mocha -- --compilers js:babel-core/register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-design/react-ui.git"
+  },
+  "keywords": [
+    "mobile",
+    "ui",
+    "framework",
+    "react"
+  ],
+  "author": "ymark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-design/react-ui/issues"
+  },
+  "homepage": "https://github.com/react-design/react-ui",
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.23.0",
+    "enzyme": "^1.1.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "history": "^1.17.0",
+    "html-webpack-plugin": "^2.14.0",
+    "husky": "^0.11.5",
+    "istanbul": "^0.4.1",
+    "jsdom": "^8.4.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "mocha": "^2.3.4",
+    "open-browser-webpack-plugin": "0.0.1",
+    "postcss-loader": "^0.8.2",
+    "react-addons-css-transition-group": "^0.14.7",
+    "react-addons-test-utils": "^0.14.3",
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.2",
+    "rimraf": "^2.4.3",
+    "sinon": "^1.17.2",
+    "style-loader": "^0.13.0",
+    "uglify-loader": "^1.2.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "peerDependencies": {
+    "react": "^0.14.2 || ^15.0.1"
+  }
 }
