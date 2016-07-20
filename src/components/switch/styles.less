@@ -1,0 +1,221 @@
+.f-switch{
+	height: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.f-switch-normal{
+	width: 70px;
+	.f-switch-content{
+		.f-switch-cell{
+			transform: translateX(40px);
+			-webkit-transform: translateX(40px);
+		}
+	}
+	.f-switch-content-switched{
+		transition:border .5s,box-shadow .5s;
+		-webkit-transition:border .5s,-webkit-box-shadow .5s;
+		.f-switch-cell{
+			transform: translateX(0);
+			-webkit-transform: translateX(0);
+			transition: .2s ease-in-out;
+			-webkit-transition: .2s ease-in-out;
+		}
+	}
+	.f-switch-inner{
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 28px;
+		line-height: 28px;
+		width: 30px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.f-switch-inner-on{
+		left: 8px;
+		color: #FFFFFF;
+	}
+	.f-switch-inner-off{
+		left: 30px;
+		color: #ABABAB;
+	}
+}
+.f-switch-small{
+	width: 50px;
+	.f-switch-content{
+		.f-switch-cell{
+			transform: translateX(20px);
+			-webkit-transform: translateX(20px);
+		}
+	}
+	.f-switch-content-switched{
+		transition:border .4s,box-shadow .4s;
+		-webkit-transition:border .4s,-webkit-box-shadow .4s;
+		.f-switch-cell{
+			transform:translateX(0);
+			-webkit-transform:translateX(0);
+			transition: .2s ease-in-out;
+			-webkit-transition: .2s ease-in-out;
+		}
+	}
+}
+.f-switch-content{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+	background: #5EB95E;
+	border: 1px solid #5EB95E;
+	border-radius: 20px;
+	position: relative;
+
+	box-shadow: #5EB95E 0 0 0 20px inset;
+	-webkit-box-shadow: #5EB95E 0 0 0 20px inset;
+}
+.f-switch-content-switched{
+	background: #ffffff;
+	border: 1px solid #DFDFDF;
+
+	box-shadow:#EFEFEF 0 0 0 0 inset;
+	-webkit-box-shadow:#EFEFEF 0 0 0 0 inset;
+	.f-switch-cell{
+		border: 1px solid #DFDFDF;
+	}
+}
+.f-switch-content-disabled{
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
+	.f-switch-cell{
+		border: 1px solid #DFDFDF;
+		background: #DFDFDF;
+	}
+}
+.f-switch-cell{
+	width: 28px;
+	height: 28px;
+	margin-top: -1px;
+	margin-left: -1px;
+	border-radius: 20px;
+	background: #FFFFFF;
+	border: 1px solid #5EB95E;
+	transition: .2s ease-in-out;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fff-switch-input{
+	height:32px;
+	position:absolute;
+	z-index:2;
+	border:0;
+	background:0 0;
+	-webkit-appearance:none;
+	outline:0
+}
+
+.fff-switch-input:before {
+	content:'';
+	height:30px;
+	border:1px solid #dfdfdf;
+	background-color:#fdfdfd;
+	border-radius:20px;
+	cursor:pointer;
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+	border-color:#dfdfdf;
+	box-shadow: #EFEFEF 0 0 0 0 inset;
+	-webkit-box-shadow: #EFEFEF 0 0 0 0 inset;
+
+	-webkit-transition:border .4s,-webkit-box-shadow .4s;
+	transition:border .4s,box-shadow .4s;
+	-webkit-background-clip:content-box;
+	background-clip:content-box
+}
+
+.fff-switch-input:checked:before {
+	// border-color:#5EB95E;
+	// background-color: #5EB95E;
+	// box-shadow: #5EB95E 0 0 0 20px inset;
+	// -webkit-box-shadow: #5EB95E 0 0 0 20px inset;
+	// transition: border .4s,box-shadow .4s;
+	// -webkit-transition:border .4s,-webkit-box-shadow .4s;
+
+		border-color:#64bd63;
+		background-color:#64bd63;
+		-webkit-box-shadow:#64bd63 0 0 0 16px inset;
+		box-shadow:#64bd63 0 0 0 16px inset;
+}
+.fff-switch-input:after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+.fff-switch-small{
+	.fff-switch-input{
+		width: 52px;
+		&:before{
+			width:50px;
+		}
+		&:after{
+			-webkit-transition:left .2s;
+			transition:left .2s;
+		}
+	}
+	.fff-switch-input:checked{
+		&:before{
+			transition:border .4s,box-shadow .4s;
+			-webkit-transition:border .4s,-webkit-box-shadow .4s;
+		}
+		&:after{
+			left: 21px;
+		}
+	}
+}
+.fff-switch-normal{
+	.fff-switch-input{
+		width: 72px;
+		&:before{
+			width: 70px;
+			transition:border .6s,box-shadow .6s;
+			-webkit-transition:border .6s,-webkit-box-shadow .6s;
+		}
+		&:after{
+			-webkit-transition:left .2s;
+			transition:left .2s;
+		}
+	}
+	.fff-switch-input:checked{
+		&:before{
+
+		}
+		&:after{
+			left: 41px;
+		}
+	}
+}

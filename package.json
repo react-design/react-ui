@@ -10,7 +10,7 @@
     },
     "main": "./lib",
     "scripts": {
-        "start": "webpack-dev-server --hot --inline --progress --colors --port 8080",
+        "start": "webpack-dev-server --hot --inline --progress --colors --host 192.168.1.132 --port 8080",
         "clean": "rimraf ./lib ./coverage",
         "build": "npm run clean & babel ./src --out-dir ./lib",
         "build:example": "rimraf ./dist && webpack",
