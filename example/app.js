@@ -8,6 +8,7 @@ import { Router, Route, IndexRoute} from 'react-router';
 import Home from './pages/home/index';
 import Button from './pages/button/index';
 import Switch from './pages/switch/index';
+import Icon from './pages/icon/index';
 
 class App extends React.Component {
         render() {
@@ -33,6 +34,7 @@ ReactDOM.render((
                     <IndexRoute component={Home}/>
                     <Route path="button" component={Button}/>
                     <Route path="switch" component={Switch}/>
+                    <Route path="icon" component={Icon}/>
             </Route>
     </Router>
 ), document.getElementById('container'));

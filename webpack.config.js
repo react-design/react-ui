@@ -9,7 +9,7 @@ module.exports = {
     context: path.join(__dirname, 'example'),
     entry: {
         js: './app.js',
-        vendor: ['react', 'react-router', 'react-dom', 'react-addons-css-transition-group']
+        vendor: ['react', 'classnames', 'react-router', 'react-dom', 'react-addons-css-transition-group']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -23,9 +23,9 @@ module.exports = {
                 loader: 'babel'
             }, {
                 test: /\.less$/,
-                loader: 'style!css!postcss!less'
+                loader: ExtractTextPlugin.extract('style-loader', 'css!postcss!less')
             }, {
-                test: /\.css/,
+                test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style', 'css', 'postcss')
             }, {
                 test: /\.(png|jpg)$/,
@@ -38,14 +38,18 @@ module.exports = {
         new webpack.DefinePlugin({
             DEBUG: process.env.NODE_ENV !== 'production'
         }),
+        new ExtractTextPlugin('f-ui.css',{allChunks: true}),
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
         new webpack.optimize.UglifyJsPlugin({
+            // extractCSS : true,
             sourceMap: false,
-            mangle: false
+            mangle: false,
+            // minimize:true
         }),
+        
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'example/index.html')
-        }),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+        })
+        // new OpenBrowserPlugin({ url: 'http://localhost:8080' })
     ]
 };
