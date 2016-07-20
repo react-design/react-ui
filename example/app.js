@@ -7,6 +7,7 @@ import { Router, Route, IndexRoute} from 'react-router';
 
 import Home from './pages/home/index';
 import Button from './pages/button/index';
+import Icon from './pages/icon/index';
 
 class App extends React.Component {
         render() {
@@ -31,6 +32,7 @@ ReactDOM.render((
             <Route path="/" component={App}>
                     <IndexRoute component={Home}/>
                     <Route path="button" component={Button}/>
+                    <Route path="icon" component={Icon}/>
             </Route>
     </Router>
 ), document.getElementById('container'));
