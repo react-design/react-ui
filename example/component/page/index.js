@@ -1,7 +1,7 @@
 "use strict";
 
 import React from 'react';
-import './page.less';
+import './styles.less';
 
 export default class Page extends React.Component {
     render() {
