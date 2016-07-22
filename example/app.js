@@ -5,11 +5,11 @@ import ReactDOM from 'react-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Router, Route, IndexRoute} from 'react-router';
 
-import Home from './pages/home/index';
-import Button from './pages/button/index';
-import Switch from './pages/switch/index';
-import SearchBar from './pages/searchBar/index';
-import Icon from './pages/icon/index';
+import Home from './pages/home';
+import Button from './pages/button';
+import Switch from './pages/switch';
+import SearchBar from './pages/searchBar';
+import Icon from './pages/icon';
 
 class App extends React.Component {
     render() {

@@ -1,7 +1,7 @@
-import {Button, ButtonArea} from './components/button/index';
-import {Icon} from './components/icon/index';
-import {Switch} from './components/switch/index';
-import {SearchBar} from './components/searchBar/index';
+import * as Button from './components/Button'
+import {Icon} from './components/icon';
+import {Switch} from './components/Switch';
+import {SearchBar} from './components/SearchBar';
 
 
 
@@ -13,8 +13,7 @@ import './components/searchBar/styles.less';
 import './components/switch/styles.less';
 
 export default {
-    Button,
-    ButtonArea,
+    ...Button,
     SearchBar,
     Switch,
     Icon
