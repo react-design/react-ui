@@ -3,11 +3,9 @@ import classNames from 'classnames';
 
 export default class Icon extends React.Component {
     render () {
-        // const {className, ...others} = this.props;
+        const {value, ...others} = this.props;
         return (
-            <div>
-                <span className="fi-home"></span>
-            </div>
+            <span className={value} {...others}></span>
         );
     }
 }
