@@ -1,10 +1,10 @@
 "use strict";
 
 import React from 'react';
-import {Switch} from '../../../src/index';
-import {Icon} from '../../../src/index';
+import {Switch} from '../../../src';
+import {Icon} from '../../../src';
 import Page from '../../component/page';
-import Title from '../../component/title/index';
+import Title from '../../component/title';
 import './switch.less';
 
 export default class ButtonDemo extends React.Component {

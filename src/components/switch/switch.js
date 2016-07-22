@@ -54,11 +54,20 @@ export default class Switch extends React.Component {
             <div className={container}>
               {
                 this.props.disabled == 'false' ?
-                <input type="checkbox" className={content} checked={this.state.switched} onChange={(e) => this.handleClick(e)}/>
+                <input type="checkbox"
+                  className={content}
+                  checked={this.state.switched}
+                  onChange={(e) => this.handleClick(e)}
+                />
                  :
-                <input type="checkbox" className={content} checked={this.state.false}/>
+                <input
+                  type="checkbox"
+                  className={content}
+                  checked={this.state.false}
+                />
               }
-              <span className={inner} onClick={(e) => this.handleClick(e)}>
+              <span className={inner}
+                onClick={(e) => this.handleClick(e)}>
                 {
                   this.state.switched ? this.props.checkedChildren :
                   this.props.uncheckedChildren

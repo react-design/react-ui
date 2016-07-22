@@ -1,9 +1,9 @@
 "use strict";
 
 import React from 'react';
-import {SearchBar} from '../../../src/index';
-import Page from '../../component/page/index';
-import Title from '../../component/title/index';
+import {SearchBar} from '../../../src';
+import Page from '../../component/page';
+import Title from '../../component/title';
 import './searchBar.less';
 
 export default class SearchBarDemo extends React.Component {
