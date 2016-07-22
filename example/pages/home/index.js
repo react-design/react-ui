@@ -7,7 +7,7 @@ import './index.less';
 export default class Home extends React.Component {
 
     state = {
-        
+
     };
 
     render() {
@@ -15,7 +15,9 @@ export default class Home extends React.Component {
             <div>
                 React - UI<br/>
                 <a href="#button"> button </a><br/>
-                <a href="#icon"> icon </a>
+                <a href="#switch"> switch </a><br/>
+                <a href="#icon"> icon </a><br/>
+                <a href="#searchBar"> searchBar </a><br/>
             </div>
         );
     }

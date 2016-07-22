@@ -12,7 +12,7 @@ export default class IconDemo extends React.Component {
         return (
             <Page className="icon" title="Icon" spacing>
                 <Icon className="aa">3</Icon>
-                
+
             </Page>
         );
     }
