@@ -1,8 +1,71 @@
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{line-height:1.6;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}
-*{margin:0;padding:0;box-sizing: border-box;}
-a img{border:0}
-a{text-decoration:none}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,header,hgroup,nav,section,article,aside,footer,figure,figcaption,menu,button {
+	margin:0;
+	padding:0;
+  box-sizing:border-box;
+}
+body {
+	font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	line-height:1.5;
+	font-size:16px;
+	color:#000;
+	background-color:#f8f8f8;
+	-webkit-user-select:none;
+	-webkit-text-size-adjust:100%;
+	-webkit-tap-highlight-color:transparent;
+	outline:0
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:400
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+caption,th {
+	text-align:left
+}
+fieldset,img {
+	border:0
+}
+li {
+	list-style:none
+}
+input{
+  appearance:none;
+  -webkit-appearance:none;
+}
+ins {
+	text-decoration:none
+}
+del {
+	text-decoration:line-through
+}
+input,button,textarea,select,optgroup,option {
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+	outline:0
+}
+button {
+	-webkit-appearance:none;
+	border:0;
+	background:0 0
+}
+a {
+	-webkit-touch-callout:none;
+	text-decoration:none
+}
+:focus {
+	outline:0;
+	-webkit-tap-highlight-color:transparent
+}
+em,i {
+	font-style:normal
+}
+
+
 
 
 
@@ -43,4 +106,3 @@ a{text-decoration:none}
 100%{-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}}
 @keyframes spin{0%{-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
 100%{-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}}
-

@@ -1,7 +1,7 @@
-import * as Button from './components/Button'
+import * as Button from './components/button'
 import {Icon} from './components/icon';
-import {Switch} from './components/Switch';
-import {SearchBar} from './components/SearchBar';
+import {Switch} from './components/switch';
+import {SearchBar} from './components/searchBar';
 
 
 

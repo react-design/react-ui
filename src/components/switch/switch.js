@@ -22,33 +22,35 @@ export default class Switch extends React.Component {
     }
 
     state = {
-      switched: this.props.defaultChecked != 'false',
+        switched: this.props.defaultChecked != 'false',
     }
 
     handleClick = (e) => {
-      if(this.props.disabled == 'false'){
-        this.state.switched ? this.setState({switched:false}) : this.setState({switched:true})
-        this.props.onChange ? this.props.onChange({checked: !this.state.switched}) : null
-      }
+        if (this.props.disabled == 'false'){
+            this.state.switched ? this.setState({switched:false}) : this.setState({switched:true})
+            this.props.onChange ? this.props.onChange({checked: !this.state.switched}) : null
+        }
     }
 
-    render() {
+    render () {
         const { size, disabled, className, children, ...others} = this.props;
         let container = classNames({
-          'f-switch': true,
-          'f-switch-small': this.props.size=='small',
-          'f-switch-normal': this.props.size=='normal',
+            'f-switch': true,
+            'f-switch-small': this.props.size == 'small',
+            'f-switch-normal': this.props.size == 'normal',
         })
         let content = classNames({
-          'f-switch-input': true,
-          'f-switch-input-active': this.props.disabled == 'false',
-          'f-switch-input-disable': this.props.disabled !== 'false',
+            'f-switch-input': true,
+            'f-switch-input-active': this.props.disabled == 'false',
+            'f-switch-input-disable': this.props.disabled !== 'false',
         })
         let inner = classNames({
-          'f-switch-inner': true,
-          'f-switch-inner-on': this.state.switched,
-          'f-switch-inner-off': !this.state.switched,
-          'f-display-none': true
+            'f-switch-inner': true,
+            'f-switch-inner-on': this.state.switched,
+            'f-switch-inner-off': !this.state.switched,
+            'f-display-none': true,
+            'f-switch-inner-disable': this.props.disabled !== 'false',
+
         })
         return (
             <div className={container}>

@@ -38,7 +38,7 @@ export default class Button extends React.Component {
             ['f-btn-disabled']: disabled,
 
             [className]: className,
-            
+
         });
         if (icon){
             return (
@@ -51,6 +51,6 @@ export default class Button extends React.Component {
         return (
             <Component {...others} className={cls}>{children}</Component>
         );
-        
+
     }
 }
