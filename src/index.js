@@ -1,4 +1,4 @@
-import * as Button from './components/button'
+import {Button} from './components/button'
 import {Icon} from './components/icon';
 import {Switch} from './components/switch';
 import {SearchBar} from './components/searchBar';
@@ -13,7 +13,7 @@ import './components/searchBar/styles.less';
 import './components/switch/styles.less';
 
 export default {
-    ...Button,
+    Button,
     SearchBar,
     Switch,
     Icon
