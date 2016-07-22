@@ -20,8 +20,8 @@ export default class SearchBar extends React.Component {
 
     search = (e) => {
       const {onSearch} = this.props;
-      if(e.keyCode==13){
-        if(onSearch){
+      if (e.keyCode == 13){
+        if (onSearch){
           onSearch()
         }
       }
@@ -31,12 +31,12 @@ export default class SearchBar extends React.Component {
       this.setState({searchValue: e.target.value})
     }
 
-    render() {
+    render () {
         const {defaultValue, value ,onSearch, ...others} = this.props;
         console.log(this.state.searchValue)
         return (
             <form className="f-searchBar" action="javascript:return true">
-              <input type="search" defaultValue={defaultValue} onKeyUp={(e)=>this.search(e)} onChange={(e)=>this.change(e)} className="f-searchBar-input"/>
+              <input type="search" defaultValue={defaultValue} onKeyUp={(e) => this.search(e)} onChange={(e) => this.change(e)} className="f-searchBar-input"/>
             </form>
         );
     }

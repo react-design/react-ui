@@ -26,18 +26,18 @@ export default class Switch extends React.Component {
     }
 
     handleClick = (e) => {
-      if(this.props.disabled == 'false'){
+      if (this.props.disabled == 'false'){
         this.state.switched ? this.setState({switched:false}) : this.setState({switched:true})
         this.props.onChange ? this.props.onChange({checked: !this.state.switched}) : null
       }
     }
 
-    render() {
+    render () {
         const { size, disabled, className, children, ...others} = this.props;
         let container = classNames({
           'f-switch': true,
-          'f-switch-small': this.props.size=='small',
-          'f-switch-normal': this.props.size=='normal',
+          'f-switch-small': this.props.size == 'small',
+          'f-switch-normal': this.props.size == 'normal',
         })
         let content = classNames({
           'f-switch-input': true,
