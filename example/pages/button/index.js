@@ -25,6 +25,13 @@ export default class ButtonDemo extends React.Component {
                 <Button plain type="warn">warn</Button>
                 <Button plain type="danger">danger</Button>
 
+                <Title text="图标（icon）"></Title>
+                <Button icon="fi-home">default</Button>
+                <Button icon="fi-spin1 animate-spin" plain type="info">info</Button>
+                <Button icon="fi-spin6 animate-spin" block type="primary">primary</Button>
+                <Button icon="fi-home" disabled type="warn">warn</Button>
+                <Button icon="fi-home" small type="danger">danger</Button>
+
                 <Title text="块（block）"></Title>
                 <Button block>default</Button>
                 <Button block type="info">info</Button>

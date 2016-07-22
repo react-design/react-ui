@@ -27,14 +27,16 @@
     "no-extra-bind" : 2,
     "no-extra-semi" : 2,
     "no-multi-spaces" : 2,
-    "keyword-spacing" : 1,
+    "keyword-spacing" : [1,{"before": true, "after": true}],
     "max-nested-callbacks" : 2,
     "no-mixed-spaces-and-tabs" : 2,
     "space-before-function-paren" : 1,
     "space-infix-ops" : 2,
     "spaced-comment" : 2,
     "arrow-spacing" : 2,
-    "no-var" : 2
+    "no-var" : 2,
+    "react/jsx-indent-props" : [2, 'tab'],
+    "react/jsx-max-props-per-line" : [2, { "maximum": 2 }]
   },
   "plugins": [
     "react"
