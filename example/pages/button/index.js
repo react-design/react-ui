@@ -1,9 +1,9 @@
 "use strict";
 
 import React from 'react';
-import {Button} from '../../../src/index';
-import Page from '../../component/page/index';
-import Title from '../../component/title/index';
+import {Button} from '../../../src';
+import Page from '../../component/page';
+import Title from '../../component/title';
 import './button.less';
 
 export default class ButtonDemo extends React.Component {

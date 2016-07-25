@@ -22,48 +22,58 @@ export default class Switch extends React.Component {
     }
 
     state = {
-      switched: this.props.defaultChecked != 'false',
+        switched: this.props.defaultChecked != 'false',
     }
 
     handleClick = (e) => {
-      if (this.props.disabled == 'false'){
-        this.state.switched ? this.setState({switched:false}) : this.setState({switched:true})
-        this.props.onChange ? this.props.onChange({checked: !this.state.switched}) : null
-      }
+        if (this.props.disabled == 'false'){
+            this.state.switched ? this.setState({switched:false}) : this.setState({switched:true})
+            this.props.onChange ? this.props.onChange({checked: !this.state.switched}) : null
+        }
     }
 
     render () {
         const { size, disabled, className, children, ...others} = this.props;
         let container = classNames({
-          'f-switch': true,
-          'f-switch-small': this.props.size == 'small',
-          'f-switch-normal': this.props.size == 'normal',
+            'f-switch': true,
+            'f-switch-small': this.props.size == 'small',
+            'f-switch-normal': this.props.size == 'normal',
         })
         let content = classNames({
-          'f-switch-input': true,
-          'f-switch-input-active': this.props.disabled == 'false',
-          'f-switch-input-disable': this.props.disabled !== 'false',
+            'f-switch-input': true,
+            'f-switch-input-active': this.props.disabled == 'false',
+            'f-switch-input-disable': this.props.disabled !== 'false',
         })
         let inner = classNames({
-          'f-switch-inner': true,
-          'f-switch-inner-on': this.state.switched,
-          'f-switch-inner-off': !this.state.switched,
-          'f-display-none': true
+            'f-switch-inner': true,
+            'f-switch-inner-on': this.state.switched,
+            'f-switch-inner-off': !this.state.switched,
+            'f-display-none': true,
+            'f-switch-inner-disable': this.props.disabled !== 'false',
+
         })
         return (
             <div className={container}>
-              {
-                this.props.disabled == 'false' ?
-                <input type="checkbox" className={content} checked={this.state.switched} onChange={(e) => this.handleClick(e)}/>
-                 :
-                <input type="checkbox" className={content} checked={this.state.false}/>
-              }
-              <span className={inner} onClick={(e) => this.handleClick(e)}>
                 {
-                  this.state.switched ? this.props.checkedChildren :
-                  this.props.uncheckedChildren
+                    this.props.disabled == 'false' ?
+                    <input
+	type="checkbox"
+	className={content}
+	checked={this.state.switched}
+	onChange={(e) => this.handleClick(e)}
+                    /> :
+                    <input
+	type="checkbox"
+	className={content}
+	checked={this.state.false}
+                    />
                 }
-              </span>
+                <span className={inner} onClick={(e) => this.handleClick(e)}>
+                    {
+                        this.state.switched ? this.props.checkedChildren :
+                        this.props.uncheckedChildren
+                    }
+                </span>
             </div>
         );
     }

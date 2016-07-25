@@ -1,10 +1,10 @@
 "use strict";
 
 import React from 'react';
-import {Switch} from '../../../src/index';
-import {Icon} from '../../../src/index';
+import {Switch} from '../../../src';
+import {Icon} from '../../../src';
 import Page from '../../component/page';
-import Title from '../../component/title/index';
+import Title from '../../component/title';
 import './switch.less';
 
 export default class ButtonDemo extends React.Component {
@@ -32,7 +32,7 @@ export default class ButtonDemo extends React.Component {
               <Switch size="normal" defaultChecked="false" disabled="true" checkedChildren="开" uncheckedChildren="关"/>
               <Switch size="small" defaultChecked="false" disabled="true"/>
 
-              <Title text="变化时回调函数" first></Title>
+              <Title text="onChange事件" first></Title>
               <Switch size="normal" onChange={(e)=>this.handleChange(e)} defaultChecked="false"/>
               <div className="showCb">
                 当前状态是：{this.state.switched}
