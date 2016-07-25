@@ -10,6 +10,7 @@ import Button from './pages/button';
 import Switch from './pages/switch';
 import SearchBar from './pages/searchBar';
 import Icon from './pages/icon';
+import Toast from './pages/toast';
 import Grid from './pages/grid';
 
 class App extends React.Component {
@@ -39,6 +40,8 @@ ReactDOM.render((
             <Route path="searchBar" component={SearchBar}/>
             <Route path="icon" component={Icon}/>
             <Route path="grid" component={Grid}/>
+            <Route path="toast" component={Toast}/>
+            
         </Route>
     </Router>
 ), document.getElementById('container'));

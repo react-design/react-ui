@@ -1,8 +1,9 @@
 import {Button} from './components/button'
 import {Icon} from './components/icon';
+import {Toast} from './components/toast';
 import {Switch} from './components/switch';
 import {SearchBar} from './components/searchBar';
-import {Row,Col} from './components/grid';
+import {Row,Col,ColHead,ColBody,ColFoot} from './components/grid';
 
 
 
@@ -13,6 +14,7 @@ import './components/icon/styles.less';
 import './components/searchBar/styles.less';
 import './components/switch/styles.less';
 import './components/grid/styles.less';
+import './components/toast/styles.less';
 
 export default {
     Button,
@@ -20,5 +22,9 @@ export default {
     Switch,
     Icon,
     Row,
-    Col
+    Col,
+    ColHead,
+    ColBody,
+    ColFoot,
+    Toast
 };
