@@ -22,7 +22,7 @@ export default class Toast extends React.Component {
             <div style={{display: show ? 'block' : 'none'}}>
                 <Mask show={true} transparent={true}></Mask>
                 <div className="f-toast">
-                    <span className={'f-toast-icon '+icon} style={{color:iconColor}}></span>
+                    <span className={'f-toast-icon ' + icon} style={{color:iconColor}}></span>
                     <p className="f-toast-content">{children}</p>
                 </div>
             </div>

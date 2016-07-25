@@ -59,7 +59,7 @@ export default class ToastDemo extends React.Component {
               <Button block type="warn" onClick={() =>this.toastClickHandle(3)}>loading1</Button><br/>
               <Button block type="danger" onClick={() =>this.toastClickHandle(4)}>loading2</Button>
 
-
+              <Title text="上浮型"></Title>
 
 
 
