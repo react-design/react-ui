@@ -17,6 +17,7 @@ import './components/switch/styles.less';
 import './components/carousel/styles.less';
 import './components/grid/styles.less';
 import './components/toast/styles.less';
+import './components/mask/styles.less';
 
 export default {
     Button,
