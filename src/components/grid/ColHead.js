@@ -8,7 +8,11 @@ export default class ColHead extends React.Component {
             [className]: className,
         });
 		return (
-            <div className={cls} style={{width:width}} {...others}>{children}</div>
+            <div className={cls} style={{width:width}}
+	{...others}
+            >
+            {children}
+            </div>
         );
     }
 }

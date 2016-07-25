@@ -12,7 +12,7 @@ export default class Mask extends React.Component {
         show: false
     };
 
-    render() {
+    render () {
         const {transparent ,show, ...others} = this.props;
         const className = classNames({
             'f-mask': show,
