@@ -18,7 +18,14 @@ export default class ButtonDemo extends React.Component {
         return (
             <Page title="carousel" spacing>
               <Title text="默认（default）" first></Title>
-              <Carousel></Carousel>
+              <Carousel>
+                <div><h3>1</h3></div>
+                <div><h3>2</h3></div>
+                <div><h3>3</h3></div>
+                <div><h3>4</h3></div>
+                <div><h3>5</h3></div>
+                <div><h3>6</h3></div>
+              </Carousel>
             </Page>
         );
     }

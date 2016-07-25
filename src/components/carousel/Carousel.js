@@ -1,27 +1,36 @@
 import React from 'react';
 import styles from './styles.less';
 import classNames from 'classnames';
+import SlickCarousel from 'react-slick';
 
 export default class Carousel extends React.Component {
-    static propTypes = {
-        disabled: React.PropTypes.string,
-    }
+    // static propTypes = {
+    //     settings : React.PropTypes.string,
+    // }
 
     static defaultProps = {
-        disabled: 'false',
+        // settings : {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        // }
     }
-
-    state = {
-      
-    }
-
     render () {
-        const { size, disabled, className, children, ...others} = this.props;
+        let props = this.props
+        if (props.effect === 'fade') {
+          props.fade = true;
+          props.draggable = false;
+        }
+        let carousel = classNames({
+            'f-carousel': true,
 
+        })
         return (
-          <div>
-            1123
-          </div>
+            <div className={carousel}>
+                <SlickCarousel {...this.props} />
+            </div>
         );
     }
 }

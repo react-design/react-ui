@@ -11,6 +11,8 @@ import Switch from './pages/switch';
 import SearchBar from './pages/searchBar';
 import Icon from './pages/icon';
 import Carousel from './pages/carousel';
+import Toast from './pages/toast';
+import Grid from './pages/grid';
 
 class App extends React.Component {
     render() {
@@ -39,6 +41,10 @@ ReactDOM.render((
             <Route path="searchBar" component={SearchBar}/>
             <Route path="icon" component={Icon}/>
             <Route path="carousel" component={Carousel}/>
+            <Route path="grid" component={Grid}/>
+            <Route path="toast" component={Toast}/>
+
+
         </Route>
     </Router>
 ), document.getElementById('container'));

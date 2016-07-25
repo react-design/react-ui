@@ -58,11 +58,11 @@ export default class SearchBar extends React.Component {
         <form className="f-searchBar" action="javascript:return true">
           <label className="f-searchBar-inner">
             <input type="search"
-              placeholder={placeholder}
-              value={this.state.searchValue}
-              onKeyUp={(e) => this.searchAction(e)}
-              onChange={(e) => this.changeValue(e)}
-              className="f-searchBar-input"
+	placeholder={placeholder}
+	value={this.state.searchValue}
+	onKeyUp={(e) => this.searchAction(e)}
+	onChange={(e) => this.changeValue(e)}
+	className="f-searchBar-input"
             />
             <span className="fi-close f-searchBar-inner-cancel" onClick={this.cancel}></span>
           </label>
