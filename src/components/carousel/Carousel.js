@@ -9,16 +9,16 @@ export default class Carousel extends React.Component {
     // }
 
     static defaultProps = {
-        // settings : {
+        settings : {
             dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1
-        // }
+        }
     }
     render () {
-        let props = this.props
+        let props = this.props;
         if (props.effect === 'fade') {
           props.fade = true;
           props.draggable = false;
@@ -29,7 +29,7 @@ export default class Carousel extends React.Component {
         })
         return (
             <div className={carousel}>
-                <SlickCarousel {...this.props} />
+                <SlickCarousel {...props} />
             </div>
         );
     }
