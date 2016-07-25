@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-export default class Icon extends React.Component {
+export default class Row extends React.Component {
 		render () {
 				const {children ,className, ...others} = this.props;
 				const cls = classNames({
