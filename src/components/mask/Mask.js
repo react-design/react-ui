@@ -16,7 +16,7 @@ export default class Mask extends React.Component {
         const {transparent ,show, ...others} = this.props;
         const className = classNames({
             'f-mask': show,
-            'f-mask-transparent': transparent
+            'f-mask-bkg': show && !transparent
         });
 
         return (

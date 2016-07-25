@@ -15,6 +15,7 @@ import './components/searchBar/styles.less';
 import './components/switch/styles.less';
 import './components/grid/styles.less';
 import './components/toast/styles.less';
+import './components/mask/styles.less';
 
 export default {
     Button,
