@@ -10,6 +10,7 @@ import Button from './pages/button';
 import Switch from './pages/switch';
 import SearchBar from './pages/searchBar';
 import Icon from './pages/icon';
+import Carousel from './pages/carousel';
 
 class App extends React.Component {
     render() {
@@ -37,6 +38,7 @@ ReactDOM.render((
             <Route path="switch" component={Switch}/>
             <Route path="searchBar" component={SearchBar}/>
             <Route path="icon" component={Icon}/>
+            <Route path="carousel" component={Carousel}/>
         </Route>
     </Router>
 ), document.getElementById('container'));

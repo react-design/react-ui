@@ -1,4 +1,4 @@
-import Switch from './switch';
+import Switch from './Switch';
 
 export default {
     Switch
