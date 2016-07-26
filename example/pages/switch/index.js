@@ -17,22 +17,22 @@ export default class ButtonDemo extends React.Component {
     render() {
         return (
             <Page className="switch" title="switch" spacing>
-              <Title text="默认（default）" first></Title>
+              <Title text="默认" first></Title>
               <Switch/>
 
-              <Title text="小尺寸（small）" first></Title>
+              <Title text="小尺寸（small）"></Title>
               <Switch size="small"/>
 
-              <Title text="设置文字/图标" first></Title>
+              <Title text="设置文字/图标"></Title>
               <Switch size="normal" checkedChildren="on" uncheckedChildren="off"/>
               <Switch size="normal" defaultChecked="false" checkedChildren="开" uncheckedChildren="关"/>
               <Switch size="normal" defaultChecked="false" checkedChildren=<Icon className="aa"/> uncheckedChildren=<Icon className="aa"/>/>
 
-              <Title text="禁用（disabled）" first></Title>
+              <Title text="禁用（disabled）"></Title>
               <Switch size="normal" defaultChecked="false" disabled="true" checkedChildren="开" uncheckedChildren="关"/>
               <Switch size="small" defaultChecked="false" disabled="true"/>
 
-              <Title text="onChange事件" first></Title>
+              <Title text="onChange事件"></Title>
               <Switch size="normal" onChange={(e)=>this.handleChange(e)} defaultChecked="false"/>
               <div className="showCb">
                 当前状态是：{this.state.switched}

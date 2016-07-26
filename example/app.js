@@ -43,8 +43,6 @@ ReactDOM.render((
             <Route path="carousel" component={Carousel}/>
             <Route path="grid" component={Grid}/>
             <Route path="toast" component={Toast}/>
-
-
         </Route>
     </Router>
 ), document.getElementById('container'));
