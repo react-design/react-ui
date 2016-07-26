@@ -9,7 +9,7 @@ import './styles.less';
 export default class ToastDemo extends React.Component {
     constructor(props) {
       super(props);
-    
+
       this.state = {
         show1 : false,      // toast : 成功
         show2 : false,      // toast : 失败

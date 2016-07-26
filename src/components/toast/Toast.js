@@ -34,6 +34,6 @@ export default class Toast extends React.Component {
                 </div>
             </div>
         );
-        
+
     }
 }

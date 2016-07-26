@@ -9,8 +9,8 @@ import './button.less';
 export default class ButtonDemo extends React.Component {
     constructor(props) {
       super(props);
-    
-      
+
+
     }
 
     testClick(){
