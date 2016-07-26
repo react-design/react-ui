@@ -26,6 +26,7 @@ export default class Home extends React.Component {
                 </Row>
                 <Row className="row">
                     <Col><a href="#searchBar"> searchBar </a></Col>
+                    <Col><a href="#dialog"> dialog </a></Col>
                 </Row>
                 
             </div>

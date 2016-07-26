@@ -4,6 +4,7 @@ import {Toast} from './components/toast';
 import {Switch} from './components/switch';
 import {SearchBar} from './components/searchBar';
 import {Carousel} from './components/carousel';
+import {Dialog} from './components/dialog';
 import {Row,Col,ColHead,ColBody,ColFoot} from './components/grid';
 
 
@@ -18,6 +19,7 @@ import './components/carousel/styles.less';
 import './components/grid/styles.less';
 import './components/toast/styles.less';
 import './components/mask/styles.less';
+import './components/dialog/styles.less';
 
 export default {
     Button,
@@ -30,5 +32,6 @@ export default {
     ColHead,
     ColBody,
     ColFoot,
-    Toast
+    Toast,
+    Dialog
 };
