@@ -4,7 +4,7 @@ import React from 'react';
 import {Carousel} from '../../../src';
 import Page from '../../component/page';
 import Title from '../../component/title';
-import './carousel.less';
+import './style.less';
 
 export default class ButtonDemo extends React.Component {
     state = {

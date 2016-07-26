@@ -17,7 +17,7 @@ export default class Toast extends React.Component {
 
     render () {
         const {show ,icon ,iconColor, children ,className, ...others} = this.props;
-        
+
         return (
             <div style={{display: show ? 'block' : 'none'}}>
                 <Mask show={true} transparent={true}></Mask>
@@ -27,6 +27,6 @@ export default class Toast extends React.Component {
                 </div>
             </div>
         );
-        
+
     }
 }

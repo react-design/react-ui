@@ -5,7 +5,7 @@ import {Switch} from '../../../src';
 import {Icon} from '../../../src';
 import Page from '../../component/page';
 import Title from '../../component/title';
-import './switch.less';
+import './style.less';
 
 export default class ButtonDemo extends React.Component {
     state = {

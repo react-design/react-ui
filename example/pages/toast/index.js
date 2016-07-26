@@ -1,15 +1,15 @@
 "use strict";
 
 import React from 'react';
-import {Icon,Toast,Button} from '../../../src/index';
-import Page from '../../component/page/index';
-import Title from '../../component/title/index';
+import {Icon,Toast,Button} from '../../../src';
+import Page from '../../component/page';
+import Title from '../../component/title';
 import './styles.less';
 
 export default class ToastDemo extends React.Component {
     constructor(props) {
       super(props);
-    
+
       this.state = {
         show1 : false,      // toast : 成功
         show2 : false,      // toast : 失败
@@ -49,7 +49,7 @@ export default class ToastDemo extends React.Component {
           show1 ,
           show2 ,
           show3 ,
-          show4 
+          show4
         } = this.state;
         return (
             <Page className="toast-layout" title="Toast" spacing>

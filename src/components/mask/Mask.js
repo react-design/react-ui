@@ -4,7 +4,7 @@ import classNames from 'classnames';
 export default class Mask extends React.Component {
 		static propTypes = {
         transparent: React.PropTypes.bool,
-        show:React.PropTypes.bool 
+        show:React.PropTypes.bool
     };
 
     static defaultProps = {

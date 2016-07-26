@@ -4,7 +4,7 @@ import React from 'react';
 import {SearchBar} from '../../../src';
 import Page from '../../component/page';
 import Title from '../../component/title';
-import './searchBar.less';
+import './style.less';
 
 export default class SearchBarDemo extends React.Component {
     searchDemo(value){
