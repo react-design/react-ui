@@ -1,35 +1,35 @@
-.rc-notification{
+.f-message,.f-message-block{
 		position: fixed;
     z-index: 1000;
     
-
-    .rc-notification-notice {
+    .f-message-notice,.f-message-block-notice {
     	background: rgba(40,40,40,.75);
 	    border-radius: 5px;
 	    color: #fff;
 
+			-webkit-animation-fill-mode: both;
+	    animation-fill-mode: both; 
+	    -webkit-animation-duration: .10s; 
+	    animation-duration: .10s;
+
+	    animation-name: bounceIn;
+	    -webkit-animation-name: bounceIn;
     
 	    padding: 7px 20px 7px 10px;
-	    // border-radius: 3px 3px;
 	    border: 1px solid #999;
 	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	    border: 0px solid rgba(0, 0, 0, 0);
-	    // background: #fff;
 	    display: block;
 	    width: auto;
 	    line-height: 1.5;
 	    vertical-align: middle;
 	    position: relative;
 	    margin: 10px 0;
-
-
-	    .message-tip{
-	    	font-size:14px;
-	    	.fi-info-circled{
-	    		color:#1385e5;
-	    	}
-	    	.fi-help-circled{
-	    		color:#fa9f47;
+			
+			.f-message-notice-content{
+				font-size:14px;
+				>div>span{
+					margin-right:5px;
 	    	}
 	    	.fi-ok-circled{
 	    		color:#04be02;
@@ -37,6 +37,26 @@
 	    	.fi-cancel-circled{
 	    		color:#ef4f4f;
 	    	}
-	    }
+			}
+	}
+}
+.f-message-block{
+	.f-message-block-notice{
+		padding: 7px 15px;
+		.f-message-block-notice-content{
+			>div{
+				text-align: center;
+				[class^='fi']{
+					margin: 7px 0 0;
+			    display: block;
+			    color: #fff;
+			    font-size: 45px;
+				}
+				span:last-child{
+					display:block;
+					margin: 0 0 10px;
+				}
+			}
+		}
 	}
 }
