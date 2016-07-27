@@ -16,7 +16,7 @@ const notificationBlock = Notification.newInstance({
     style : {top:'150px' ,left:'50%'}
 });
 
-function notice(mes , duration=defaultDuration ,showType='tips' ,type ,icon){
+function notice (mes , duration = defaultDuration ,showType = 'tips' ,type ,icon){
     let param = {
         key,
         content: <div>
@@ -25,9 +25,9 @@ function notice(mes , duration=defaultDuration ,showType='tips' ,type ,icon){
         </div>,
         duration:duration
     }
-    if(showType == 'block'){
+    if (showType == 'block'){
         notificationBlock.notice(param);
-    }else{
+    } else {
         notification.notice(param);
     }
 	
@@ -35,9 +35,9 @@ function notice(mes , duration=defaultDuration ,showType='tips' ,type ,icon){
   return (function () {
     let target = key++;
     return function () {
-        if(showType == 'block'){
+        if (showType == 'block'){
             notificationBlock.removeNotice(target);
-        }else{
+        } else {
             notification.removeNotice(target);
         }
     };
@@ -45,26 +45,26 @@ function notice(mes , duration=defaultDuration ,showType='tips' ,type ,icon){
 }
 export default {
     Message : {
-    	// 普通提醒
-    	info(mes ,{duration ,type}={}){
+        // 普通提醒
+        info (mes ,{duration ,type} = {}){
             return notice(mes ,duration ,type ,'info' ,'fi-info-circled')
-    	},
-    	// 成功提醒
-    	success(mes ,{duration ,type}={}){
-    		return notice(mes ,duration ,type ,'success' ,'fi-ok-circled')
-    	},
-    	// 错误提示
-    	error(mes ,{duration ,type}={}){
-    		return notice(mes ,duration ,type ,'error' ,'fi-cancel-circled')
-    	},
-    	// 警告提示
-    	warn(mes ,{duration ,type}={}){
-    		return notice(mes ,duration ,type ,'warn' ,'fi-help-circled')
-    	},
-    	// 加载中
-    	loading(mes ,{duration=0 ,type}={}){
-    		return notice(mes ,duration ,type ,'loading' ,'fi-spin2 animate-spin')
-    	}
+        },
+        // 成功提醒
+        success (mes ,{duration ,type} = {}){
+            return notice(mes ,duration ,type ,'success' ,'fi-ok-circled')
+        },
+        // 错误提示
+        error (mes ,{duration ,type} = {}){
+            return notice(mes ,duration ,type ,'error' ,'fi-cancel-circled')
+        },
+        // 警告提示
+        warn (mes ,{duration ,type} = {}){
+            return notice(mes ,duration ,type ,'warn' ,'fi-help-circled')
+        },
+        // 加载中
+        loading (mes ,{duration = 0 ,type} = {}){
+            return notice(mes ,duration ,type ,'loading' ,'fi-spin2 animate-spin')
+        }
 
     }
 };

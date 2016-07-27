@@ -62,8 +62,7 @@ export default class ToastDemo extends React.Component {
     // message:块提示
     MblockClickHandle(type ,text){
       Message[type](text ,{
-        type : 'block' ,
-        duration : 10 ,//默认为1.5秒
+        type : 'block' 
       })
     }
 
