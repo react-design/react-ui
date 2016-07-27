@@ -33,8 +33,7 @@
     "space-infix-ops" : 2,
     "spaced-comment" : 2,
     "arrow-spacing" : 2,
-    "no-var" : 2,
-    "react/jsx-max-props-per-line" : [2, { "maximum": 2 }]
+    "no-var" : 2
   },
   "plugins": [
     "react"

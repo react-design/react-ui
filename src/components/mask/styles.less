@@ -1,3 +1,7 @@
+@-webkit-keyframes bounceInNone { /* 默认 */
+    0% {opacity: 0;  }
+    100% {opacity: 1; }
+}
 .f-mask{
 	  position: fixed;
     z-index: 1000;
@@ -5,8 +9,16 @@
     height: 100%;
     top: 0;
     left: 0;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    animation-name: bounceInNone;
+    -webkit-animation-name: bounceInNone;
 }
 
 .f-mask-bkg{
-	    background: rgba(0,0,0,.6);
+    background: rgba(0,0,0,.6);
+	
 }
