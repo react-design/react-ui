@@ -1,0 +1,27 @@
+<div class="sidebar">
+    <ul class="main-menu">
+        <%- partial('partials/main_menu') %>
+    </ul>
+    <div class="list">
+        <h2>
+			<% titles = {api: 'API', examples: '示例', guide: '教程'} %>
+			<%- titles[type] %>
+            <select class="version-select">
+                <option selected>0.5</option>
+            </select>
+        </h2>
+        <ul class="menu-root">
+            <% type !== 'blog' && site.pages.find({type: type}).sort('order').each(function (p) { %>
+                <li>
+                    <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+                </li>
+            <% }) %>
+        </ul>
+<!--         <div id="donate">
+            <span class="wrapper" style="width: 72px">
+              <img src="/images/weixinpay.png">
+              <a>打个赏</a>
+            </span>
+        </div> -->
+    </div>
+</div>
