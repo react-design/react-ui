@@ -1,7 +1,7 @@
 "use strict";
 
 import React from 'react';
-import {Icon,Toast,Button} from '../../../src';
+import {Icon,Toast,Button,Message} from '../../../src';
 import Page from '../../component/page';
 import Title from '../../component/title';
 import './styles.less';
@@ -9,7 +9,6 @@ import './styles.less';
 export default class ToastDemo extends React.Component {
     constructor(props) {
       super(props);
-
       this.state = {
         show1 : false,      // toast : 成功
         show2 : false,      // toast : 失败
@@ -57,6 +56,10 @@ export default class ToastDemo extends React.Component {
       }, 2000);
     }
 
+    messageClickHandle(){
+      Message.info();
+    }
+
     render() {
         const {
           show1 ,
@@ -81,7 +84,8 @@ export default class ToastDemo extends React.Component {
               <Button type="primary" onClick={() =>this.toastClickHandle(6)}>底部显示</Button>
 
 
-
+              <Title text="Message弹出层"></Title>
+              <Button type="info" onClick={() =>this.messageClickHandle()}>头部显示</Button>
 
               <Toast show={show1} icon="fi-attention" iconColor="#04be02"> 成功 </Toast>
               <Toast show={show2} icon="fi-close" iconColor="red"> 失败 </Toast>

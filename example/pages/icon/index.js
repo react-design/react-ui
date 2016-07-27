@@ -36,6 +36,12 @@ export default class IconDemo extends React.Component {
 						<Col><Icon value="fi-left-open"></Icon></Col>
 						<Col><Icon value="fi-search"></Icon></Col>
                     </Row>
+                    <Row className="row">
+                        <Col><Icon value="fi-help-circled"></Icon></Col>
+                        <Col><Icon value="fi-ok-circled"></Icon></Col>
+                        <Col><Icon value="fi-cancel-circled"></Icon></Col>
+                        <Col><Icon value="fi-info-circled"></Icon></Col>
+                    </Row>
 					<Row className="row">
                 		<Col><Icon value="fi-menu"></Icon></Col>
 						<Col></Col>

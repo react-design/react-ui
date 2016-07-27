@@ -21,6 +21,7 @@ export default class Home extends React.Component {
                 <a href="#carousel"> carousel </a><br/>
                 <a href="#grid"> grid </a><br/>
                 <a href="#toast"> toast </a><br/>
+                <a href="#dialog"> dialog </a><br/>
                 <a href="#actionSheet"> actionSheet </a><br/>
             </div>
         );
