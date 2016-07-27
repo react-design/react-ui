@@ -129,12 +129,28 @@ export default class ToastDemo extends React.Component {
 
               
 
-              <Toast show={show1} icon="fi-attention" iconColor="#04be02"> 成功 </Toast>
-              <Toast show={show2} icon="fi-close" iconColor="red"> 失败 </Toast>
+              <Toast 
+                show={show1} 
+                icon="fi-attention" 
+                iconColor="#04be02"
+              > 
+              成功 </Toast>
+              <Toast 
+                show={show2} 
+                icon="fi-close" 
+                iconColor="red"
+              >
+              失败 </Toast>
               <Toast show={show3} icon="fi-spin animate-spin"> 正在加载中... </Toast>
               <Toast show={show4} icon="fi-spin2 animate-spin"> 正在加载中... </Toast>
 
-              <Toast show={show5} icon="fi-attention" iconColor="#04be02" type="top"> 操作成功操作 </Toast>
+              <Toast 
+                show={show5} 
+                icon="fi-attention" 
+                iconColor="#04be02" 
+                type="top"
+              >
+              操作成功操作 </Toast>
               <Toast show={show6} type="bottom"> 失败 </Toast>
               <Toast show={show7} > 正在加载中... </Toast>
             </Page>

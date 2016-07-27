@@ -42,8 +42,7 @@ export default class DialogDemo extends React.Component {
 		}
 
     render() {
-        const self = this;
-
+      
     		const {
           show1 ,
           show2 ,
@@ -68,18 +67,18 @@ export default class DialogDemo extends React.Component {
 
         	 		<Dialog 
                 show={show1}
-                onOk={() => self.eventHandle.onCancel(1)}
+                onOk={() => this.eventHandle.onCancel(1)}
               >
         	 			确认要提交吗
         	 		</Dialog>
 
               <Dialog 
                 show={show2}
-                onCancel={() => self.eventHandle.onCancel(2)}
-                onOk={() => self.eventHandle.onOk(2)}
+                onCancel={() => this.eventHandle.onCancel(2)}
+                onOk={() => this.eventHandle.onOk(2)}
                 footer={[
-                  {text:'取消',onClick:() => self.eventHandle.onCancel(2)},
-                  {text:'完成',onClick:() => self.eventHandle.onOk(2)},
+                  {text:'取消',onClick:() => this.eventHandle.onCancel(2)},
+                  {text:'完成',onClick:() => this.eventHandle.onOk(2)},
                 ]}
                 className="aaa"
               >
@@ -89,12 +88,12 @@ export default class DialogDemo extends React.Component {
 
               <Dialog 
                 show={show3}
-                onCancel={() => self.eventHandle.onCancel(3)}
-                onOk={() => self.eventHandle.onOk(3)}
+                onCancel={() => this.eventHandle.onCancel(3)}
+                onOk={() => this.eventHandle.onOk(3)}
                 footer={[
-                  {text:'取消',onClick:() => self.eventHandle.onCancel(3) ,color:'black'},
-                  {text:'保存草稿',onClick:() => self.eventHandle.onCancel(3)},
-                  {text:'提交',onClick:() => self.eventHandle.onOk(3)},
+                  {text:'取消',onClick:() => this.eventHandle.onCancel(3) ,color:'black'},
+                  {text:'保存草稿',onClick:() => this.eventHandle.onCancel(3)},
+                  {text:'提交',onClick:() => this.eventHandle.onOk(3)},
                 ]}
               >
                 <p>我的测试</p>
@@ -103,7 +102,7 @@ export default class DialogDemo extends React.Component {
               <Dialog 
                 show={show4}
                 title="请求确认"
-                onOk={() => self.eventHandle.onCancel(4)}
+                onOk={() => this.eventHandle.onCancel(4)}
               >
                 确认要提交吗？
               </Dialog>
@@ -111,7 +110,7 @@ export default class DialogDemo extends React.Component {
               <Dialog 
                 show={show5}
                 title="详细信息"
-                footer={[{text:'关闭',onClick:() => self.eventHandle.onCancel(5)}]}
+                footer={[{text:'关闭',onClick:() => this.eventHandle.onCancel(5)}]}
               >
                 <p>
                   随着应用不断变大，保证组件被正确使用变得非常有用。为此我们引入 propTypes。React.PropTypes 提供很多验证器 (validator) 来验证传入数据的有效性。当向 props 传入无效数据时，JavaScript 控制台会抛出警告。注意为了性能考虑，只在开发环境验证 propTypes。下面用例子来说明不同验证器的区别：
