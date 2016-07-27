@@ -1,9 +1,9 @@
 "use strict";
 
 import React from 'react';
-import {Row,Col,ColHead,ColBody,ColFoot} from '../../../src/index';
-import Page from '../../component/page/index';
-import Title from '../../component/title/index';
+import {Row,Col,ColHead,ColBody,ColFoot} from '../../../src';
+import Page from '../../component/page';
+import Title from '../../component/title';
 import './grid.less';
 
 export default class ButtonDemo extends React.Component {
@@ -17,7 +17,7 @@ export default class ButtonDemo extends React.Component {
     render() {
         return (
             <Page className="grid-layout" title="Grid" spacing>
-                <Title text="百分比-等分" first></Title>
+                <Title text="flex-等分" first></Title>
                 <Row className="row">
                     <Col className="color-1">1/1</Col>
                 </Row>
@@ -36,7 +36,7 @@ export default class ButtonDemo extends React.Component {
                     <Col className="color-1">1/4</Col>
                     <Col className="color-5">1/4</Col>
                 </Row>
-                <Title text="百分比-自定义"></Title>
+                <Title text="flex-自定义"></Title>
                 <Row className="row">
                     <Col className="color-1" flex="1">1/3</Col>
                     <Col className="color-2" flex="2">2/3</Col>
