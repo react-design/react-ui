@@ -1,11 +1,44 @@
+.f-actionSheet .f-mask{
+	opacity: 0;
+}
+.f-actionSheet-hidden{
+	.f-mask{
+		opacity: 0;
+    transition: opacity 2.3s;
+		-webkit-transition: opacity 2.3s;
+	}
+	.f-actionSheet-list{
+		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		transition: transform .3s;
+    -webkit-transition: transform .3s;
+	}
+}
+
+
+.f-actionSheet-show{
+	.f-mask{
+		opacity: 1;
+    transition: opacity 2.3s;
+		-webkit-transition: opacity 2.3s;
+	}
+	.f-actionSheet-list{
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+	}
+}
+
+
 .f-actionSheet-list{
+	z-index: 2000;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
-	z-index: 2;
-	background: #ffffff;
 	>ul{
+		background: #ffffff;
 		>li{
 			width: 100%;
 			height: 44px;
