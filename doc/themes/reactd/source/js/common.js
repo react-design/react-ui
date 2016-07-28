@@ -1,6 +1,6 @@
 (function () {
 
-  initSearch()
+  // initSearch()
   initMobileMenu()
   if (PAGE_TYPE) {
     initVersionSelect()
@@ -11,13 +11,13 @@
    * Swiftype search box
    */
 
-  function initSearch () {
-    docsearch({
-      apiKey: '6975326a4ea9315c3ffc44f03a3f743d',
-      indexName: 'vuejs_cn',
-      inputSelector: '#search-query'
-    });
-  }
+  // function initSearch () {
+  //   docsearch({
+  //     apiKey: '6975326a4ea9315c3ffc44f03a3f743d',
+  //     indexName: 'react-d',
+  //     inputSelector: '#search-query'
+  //   });
+  // }
 
   /**
    * Mobile burger menu button for toggling sidebar
@@ -50,7 +50,7 @@
       if (version.indexOf('1.') !== 0) {
         version = version.replace('.', '')
         var section = window.location.pathname.match(/\/(\w+?)\//)[1]
-        window.location.assign('http://' + version + '.vuejs.org/' + section + '/')
+        window.location.assign('http://' + version + '.react-d/' + section + '/')
       } else {
         // TODO when 1.x is out
       }
@@ -82,6 +82,8 @@
         currentPageAnchor.parentNode.appendChild(sectionContainer)
       }
       var headers = content.querySelectorAll('h2')
+
+			console.log(headers)
       if (headers.length) {
         each.call(headers, function (h) {
           sectionContainer.appendChild(makeLink(h))

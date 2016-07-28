@@ -4,77 +4,38 @@ type: api
 order: 1
 ---
 
-# react-ionic
-基于react维护的一套ionic风格的可复用组件库
+## react-ui 介绍
+## 基本样式
+### 样式统一
+### 基础设置
+### 文字排版
+## 布局相关
+## 网格 Grid
+### 简介
+## 按钮 Button
+### 尺寸
+### 激活状态
+### 禁用状态
 
 
-## Installation
-
-```
-git clone https://github.com/react-design/react-ui.git
-```
-
-## Install dependencies
-
-```
-npm install --registry=https://registry.npm.taobao.org --verbose
-```
-
-## Start server
-
-```
-npm start
-```
-
-## How to visit
-
-Open url `http://127.0.0.1:8080/` in browser.
 
 
-# Components
-计划中的组件，后续应该会不断加入新的组件
-
- - [x] Button
- - [ ] Input
- - [ ] grid
- - [x] Switch
- - [ ] Numberbox
- - [ ] Checkbox
- - [ ] Select
- - [ ] ActionSheet
- - [ ] Tabbar
- - [ ] Dialog
- - [ ] Toast
- - [ ] Popover
- - [ ] Carousel
- - [ ] Popover
- - [ ] Navigation
- - [ ] Spiner
- - [ ] Datepicker
- - [ ] Processbar
- - [ ] Searchbar
- - [ ] ShareGroup
-
-
-# Change log
-
-
-## 项目结构
-```react-ui
-   |-- example  
-   |-- lib
-   |-- src  
-   |   |-- components  
-   |   |   |-- button
-   |   |   |   |-- button.js
-   |   |   |   |-- index.js
-   |   |   |   `-- styles.less
-   |   |   |-- ...  
-   |   `-- index.js
-   |-- .babelrc
-   |-- .editorconfig
-   |-- .eslintrc
-   |-- .travis.yml
-   |-- package.json
-   `-- webpack.config.js
-```
+{% raw %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
+{% endraw %}
