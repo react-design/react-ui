@@ -4,26 +4,17 @@ import Mask from '../mask/Mask';
 
 export default class ActionSheet extends React.Component {
   static propTypes = {
+    show: React.PropTypes.bool,
+    onRequestClose: React.PropTypes.func
   }
 
   static defaultProps = {
     show: false,
-  }
-  state={
-    show: true
-  }
-
-  cancel = () => {
-    this.setState({show:false})
-    // setTimeout(function(){
-    //   this.setState({show:true})
-    // },500)
+    onRequestClose: null
   }
 
   render () {
-    const {show ,children} = this.props;
-    let ctrlShow;
-
+    const {show ,children ,onRequestClose} = this.props;
 
     let container = classNames({
       'f-actionSheet': true,
@@ -34,9 +25,9 @@ export default class ActionSheet extends React.Component {
     return (
       <div className={container}>
         <Mask
-          show={show && this.state.show}
+          show={show}
           transparent={false}
-          onClick={this.cancel}
+          conceal={onRequestClose}
         ></Mask>
         <div className="f-actionSheet-list">
           {children}

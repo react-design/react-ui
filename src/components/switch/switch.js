@@ -50,7 +50,6 @@ export default class Switch extends React.Component {
       'f-switch-inner-off': !this.state.switched,
       'f-display-none': true,
       'f-switch-inner-disable': this.props.disabled !== 'false',
-
     })
     return (
       <div className={container}>
