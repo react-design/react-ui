@@ -1,32 +1,29 @@
-.f-actionSheet .f-mask{
-	opacity: 0;
-}
 .f-actionSheet-hidden{
 	.f-mask{
-		opacity: 0;
-    transition: opacity 2.3s;
-		-webkit-transition: opacity 2.3s;
+		background: rgba(0,0,0,0);
+    transition: background .3s;
+		-webkit-transition: background .3s;
 	}
 	.f-actionSheet-list{
 		transform: translateY(100%);
 		-webkit-transform: translateY(100%);
-		transition: transform .3s;
-    -webkit-transition: transform .3s;
+    // -webkit-transform: translate(0, 100%);
+    // transform: translate(0, 100%);
 	}
 }
 
 
 .f-actionSheet-show{
 	.f-mask{
-		opacity: 1;
-    transition: opacity 2.3s;
-		-webkit-transition: opacity 2.3s;
+		background: rgba(0,0,0,0.6);
+		-webkit-transition: background .3s;
+    transition: background .3s;
 	}
 	.f-actionSheet-list{
-		transform: translateY(0);
 		-webkit-transform: translateY(0);
-    transition: transform .3s;
-    -webkit-transition: transform .3s;
+		transform: translateY(0);
+    // -webkit-transform: translate(0, 0);
+    // transform: translate(0, 0);
 	}
 }
 
@@ -37,6 +34,12 @@
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	// -webkit-backface-visibility: hidden;
+	// backface-visibility: hidden;
+	-webkit-transition: -webkit-transform .3s;
+	transition: -webkit-transform .3s;
+	transition: transform .3s;
+	transition: transform .3s, -webkit-transform .3s;
 	>ul{
 		background: #ffffff;
 		>li{
@@ -46,8 +49,16 @@
 			text-align: center;
 			color: #666666;
 			border-top: 1px solid #efefef;
+			a{
+				width: 100%;
+				height: 100%;
+				color: #666666;
+			}
 			&:last-child{
 				border-top: 5px solid #efefef;
+			}
+			&:active {
+			  background-color: #ECECEC;
 			}
 		}
 	}
