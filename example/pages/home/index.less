@@ -1,10 +1,24 @@
 
-
-.global_navs{
-    .icon_nav{
-        width: 28px;
-        height: 28px;
-        display: block;
-        margin-right: .7em;
-    }
+.home-layout{
+	.row:last-child{
+		.f-col{
+			border-top:1px solid #E0E0E0;
+		}
+	}
+	.row{
+		height:100px;
+		.f-col{
+			border-top:1px solid #E0E0E0;
+			border-right:1px solid #E0E0E0;
+			padding:10px;
+			justify-content: center;
+	    align-items: center;
+	    display: flex;
+	    word-break: break-word;
+		}
+		.f-col:first-child{
+			border-left:1px solid #E0E0E0;
+		}
+	}
+	
 }
