@@ -12,7 +12,7 @@ import {Row,Col,ColHead,ColBody,ColFoot} from './components/grid';
 
 
 
-import './components/base.css';
+import './components/base.less';
 import './components/button/styles.less';
 import './components/icon/styles.less';
 import './components/searchBar/styles.less';
