@@ -13,6 +13,8 @@ import Icon from './pages/icon';
 import Carousel from './pages/carousel';
 import Toast from './pages/toast';
 import Grid from './pages/grid';
+import Dialog from './pages/dialog';
+import ActionSheet from './pages/actionSheet';
 
 class App extends React.Component {
     render() {
@@ -43,8 +45,8 @@ ReactDOM.render((
             <Route path="carousel" component={Carousel}/>
             <Route path="grid" component={Grid}/>
             <Route path="toast" component={Toast}/>
-
-
+            <Route path="dialog" component={Dialog}/>
+            <Route path="actionSheet" component={ActionSheet}/>
         </Route>
     </Router>
 ), document.getElementById('container'));

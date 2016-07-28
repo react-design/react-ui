@@ -7,26 +7,33 @@ export default class Toast extends React.Component {
         show: React.PropTypes.bool,
         icon: React.PropTypes.string,
         iconColor: React.PropTypes.string,
+        type: React.PropTypes.string,
     };
 
     static defaultProps = {
         show: false,
-        icon: 'fi-ok',
-        iconColor:'#ffffff'
+        icon: '',
+        iconColor:'#ffffff',
+        type:'',
     };
 
     render () {
-        const {show ,icon ,iconColor, children ,className, ...others} = this.props;
-        
+        const {show ,icon ,type ,iconColor, children ,className, ...others} = this.props;
+        const cls = classNames({
+            ['f-toast'] : true,
+            ['ft-bt'] : type || (!type && !icon),
+            ['toast-top'] : type === 'top',
+            ['toast-bottom'] : type === 'bottom'
+        });
         return (
             <div style={{display: show ? 'block' : 'none'}}>
                 <Mask show={true} transparent={true}></Mask>
-                <div className="f-toast">
-                    <span className={'f-toast-icon ' + icon} style={{color:iconColor}}></span>
+                <div className={cls}>
+                    {icon ? <span className={'f-toast-icon ' + icon} style={{color:iconColor}}></span> : ''}
                     <p className="f-toast-content">{children}</p>
                 </div>
             </div>
         );
-        
+
     }
 }
