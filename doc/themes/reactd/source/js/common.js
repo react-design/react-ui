@@ -83,7 +83,6 @@
       }
       var headers = content.querySelectorAll('h2')
 
-			console.log(headers)
       if (headers.length) {
         each.call(headers, function (h) {
           sectionContainer.appendChild(makeLink(h))
