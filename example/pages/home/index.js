@@ -34,18 +34,21 @@ export default class Home extends React.Component {
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconButton}/></ColHead>
                             <ColBody className="r-name">button</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#switch">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconSwitch}/></ColHead>
                             <ColBody className="r-name">switch</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#icon">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconIcon}/></ColHead>
                             <ColBody className="r-name">icon</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
 
@@ -53,36 +56,42 @@ export default class Home extends React.Component {
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconSearch}/></ColHead>
                             <ColBody className="r-name">searchBar</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#carousel">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconCarousel}/></ColHead>
                             <ColBody className="r-name">carousel</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#grid">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconGrid}/></ColHead>
                             <ColBody className="r-name">grid</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#toast">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconToast}/></ColHead>
                             <ColBody className="r-name">toast</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#dialog">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconDialog}/></ColHead>
                             <ColBody className="r-name">dialog</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                     <a href="#actionSheet">
                         <Row className="row">
                             <ColHead className="r-icon"><img src={IconActionsheet}/></ColHead>
                             <ColBody className="r-name">actionSheet</ColBody>
+                            <ColFoot><Icon value="fi-right-open" /></ColFoot>
                         </Row>
                     </a>
                 </div>
