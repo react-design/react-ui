@@ -1,23 +1,61 @@
+// C : Color 			- 全局颜色前缀
+// D : Dark 			- 默认-深色
+// P : Primary 		- 默认的颜色
+// L : Light 			- 默认-明亮
+// T : text/Icon 	- 文本的背景色/图标的颜色
+// A : Accent 		- 主色调加强？
+// S : Secondary 	- 中等的颜色（比如副标题）
+// Di : Divider 	- 分割线的颜色
+@CPD:#0288D1; //Color  Primary  dark
+@CP:#03A9F4; 	//Color  primary
+@CPL:#B3E5FC; //Color  Primary  light
+@CTP:#FFFFFF; //Color  text  Primary
+@CA:#00BCD4; 	//Color  accent
+@CPT:#212121; //Color  primary  Text
+@CST:#727272; //Color  secondary  Text
+@CD:#B6B6B6; 	//Color  divider
+
 
 .home-layout{
-	.row:last-child{
-		.f-col{
-			border-top:1px solid #E0E0E0;
-		}
+  height: 100%;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  -ms-scroll-chaining: none;
+	.head{
+		background-color: @CP;
+    color: @CTP;
+    padding: 30px;
+    text-align: center;
+    padding-bottom:40px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    h2{
+    	color: #b3e5fc;
+    }
 	}
-	.row{
-		height:100px;
-		.f-col{
-			border-top:1px solid #E0E0E0;
-			border-right:1px solid #E0E0E0;
-			padding:10px;
-			justify-content: center;
-	    align-items: center;
-	    display: flex;
-	    word-break: break-word;
-		}
-		.f-col:first-child{
-			border-left:1px solid #E0E0E0;
+
+	.function-grid{
+    
+    a:link,a:visited{
+			color:@CP;
+    }
+
+    a:active{
+    	color:@CPD;
+    }
+    
+		.f-row{
+			padding:20px;
+			border-bottom:1px solid #E6E6E6;
+			
+			.r-icon{
+				padding-right:20px;
+			}
+	
+			img{
+				width:22px;
+			}
 		}
 	}
 	

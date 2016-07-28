@@ -4,13 +4,22 @@ import classNames from 'classnames';
 export default class Mask extends React.Component {
 		static propTypes = {
         transparent: React.PropTypes.bool,
-        show:React.PropTypes.bool
+        show: React.PropTypes.bool,
+				conceal: React.PropTypes.func
     };
 
     static defaultProps = {
         transparent: false,
-        show: false
+        show: false,
+				conceal: null
     };
+
+		hidden = () => {
+        const {conceal} = this.props;
+				if(conceal){
+					conceal()
+				}
+		}
 
     render () {
         const {transparent ,show, ...others} = this.props;
@@ -20,7 +29,12 @@ export default class Mask extends React.Component {
         });
 
         return (
-            <div className={className} {...others}></div>
+            <div
+							className={className}
+							onClick={this.hidden}
+							{...others}
+						>
+						</div>
         );
     }
 }
