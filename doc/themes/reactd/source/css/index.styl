@@ -1,10 +1,6 @@
 @import "_common"
 
-zoom()
-    -webkit-transform scale(1.05)
-    -moz-transform scale(1.05)
-    -ms-transform scale(1.05)
-    transform scale(1.05)
+
 
 html, body
     height 100%
@@ -381,12 +377,13 @@ html, body
 				justify-content : center
 				align-items : center
 				width: 100%
+				height: 100%
 				.phone
 						width : 372px
 						height : 678px
-						background : url(../images/iphone.png)
+						background : url(../images/iphone.png) no-repeat
 						background-size : 100%
-						transform: scale(0.7)
+						zoom: 0.6
 						padding: 162px 90px 163px 90px
 				.desc-info
 						h3
@@ -426,6 +423,84 @@ html, body
 		width : 100%
 		text-align : center
 		z-index : 1
+#navbar
+		.indicateor
+				pointer-events: none;
+				position: fixed;
+				-webkit-transition: all 0.25s ease-in-out;
+				transition: all 0.25s ease-in-out;
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .nav-index
 		background-color:#000
 		display: flex
@@ -448,5 +523,7 @@ html, body
 						padding : 25px 20px
 						list-style :none
 						float : left
+						&:hover
+								background : #106ec4
 						a
 								color : #fff
