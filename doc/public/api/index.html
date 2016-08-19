@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>Hello World - React Design</title>
+        <title>Quick start - React Design</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -10,7 +10,7 @@
         <link href='//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
         <link rel="icon" href="/images/logo.png" type="image/x-icon">
         <script>
-            window.PAGE_TYPE = ""
+            window.PAGE_TYPE = "api"
         </script>
         <link rel="stylesheet" href="/css/page.css">
         <!-- <script>
@@ -43,7 +43,7 @@
     <input type="text" id="search-query" class="st-default-search-input">
   </form>
 </li> -->
-<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/api/" class="nav-link current">API</a></li>
 <li><a href="#" class="nav-link">RNUI</a></li>
 <li><a href="http://demo.react-d.com/#/?_k=qgj3q0" target="_blank" class="nav-link">Demo</a></li>
 <li><a href="#" class="nav-link">讨论</a></li>
@@ -61,14 +61,15 @@
 
             <div id="main">
                 
-                    <div class="sidebar blog">
+                    
+    <div class="sidebar">
     <ul class="main-menu">
         <!-- <li>
   <form id="search-form">
     <input type="text" id="search-query" class="st-default-search-input">
   </form>
 </li> -->
-<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/api/" class="nav-link current">API</a></li>
 <li><a href="#" class="nav-link">RNUI</a></li>
 <li><a href="http://demo.react-d.com/#/?_k=qgj3q0" target="_blank" class="nav-link">Demo</a></li>
 <li><a href="#" class="nav-link">讨论</a></li>
@@ -84,25 +85,26 @@
     </ul>
     <div class="list">
         <h2>
-            Recent Posts
-            <a href="/atom.xml" target="_blank" style="vertical-align: middle; margin-left: 5px">
-                <img src="/images/feed.png" style="width:15px;height:15px">
-            </a>
+			
+			API
+            <select class="version-select">
+                <option selected>0.5</option>
+            </select>
         </h2>
-        <ul style="padding:0">
-        
-            <li>
-                <a href="/2016/07/27/React-D/" class="sidebar-link">React D</a>
-            </li>
-        
-            <li>
-                <a href="/2016/07/26/hello-world/" class="sidebar-link current">Hello World</a>
-            </li>
-        
+        <ul class="menu-root">
+            
         </ul>
+<!--         <div id="donate">
+            <span class="wrapper" style="width: 72px">
+              <img src="/images/weixinpay.png">
+              <a>打个赏</a>
+            </span>
+        </div> -->
     </div>
 </div>
-<div class="content blog post">
+
+
+<div class="content api with-sidebar">
     <!-- <div id="ad">
   <span>Proudly sponsored by</span>
   <br>
@@ -112,18 +114,24 @@
   </a>
 </div> -->
 
-    <h1>Hello World</h1>
-    <h4>Jul 26, 2016</h4>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <h1>Quick start</h1>
+    <h2 id="react-ui-介绍"><a href="#react-ui-介绍" class="headerlink" title="react-ui 介绍"></a>react-ui 介绍</h2><h2 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h2><h3 id="样式统一"><a href="#样式统一" class="headerlink" title="样式统一"></a>样式统一</h3><h3 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h3><h3 id="文字排版"><a href="#文字排版" class="headerlink" title="文字排版"></a>文字排版</h3><h2 id="布局相关"><a href="#布局相关" class="headerlink" title="布局相关"></a>布局相关</h2><h2 id="网格-Grid"><a href="#网格-Grid" class="headerlink" title="网格 Grid"></a>网格 Grid</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><h2 id="按钮-Button"><a href="#按钮-Button" class="headerlink" title="按钮 Button"></a>按钮 Button</h2><h3 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h3><h3 id="激活状态"><a href="#激活状态" class="headerlink" title="激活状态"></a>激活状态</h3><h3 id="禁用状态"><a href="#禁用状态" class="headerlink" title="禁用状态"></a>禁用状态</h3>
+    <div id="example"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
 
+
+    
+    <!-- <div class="footer">
+      发现错误？想参与编辑？
+      <a href="https://github.com/react-design/react-ui/" target="_blank">
+        在 Github 上编辑此页！
+      </a>
+    </div> -->
 </div>
 
                 
