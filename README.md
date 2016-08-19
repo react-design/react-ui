@@ -1,7 +1,7 @@
 # react-ionic
 Based on the react to maintain a set of ionic style of reusable component library    
 
-[React-design](http://demo.react-d.com/#/?_k=qgj3q0)
+[React-design](http://www.react-d.com)
 
 ## Show
 ![demo](http://g.recordit.co/lWR00hs6o1.gif)  
