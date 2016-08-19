@@ -1,6 +1,16 @@
-# react-ionic
-基于react维护的一套ionic风格的可复用组件库
+# react-ui
+Based on the react to maintain a set of ionic style of reusable component library    
 
+[React-design](http://www.react-d.com)
+
+## Show
+![demo](http://g.recordit.co/lWR00hs6o1.gif)   
+
+## Phone preview
+![image](https://cloud.githubusercontent.com/assets/9276376/17802302/06531f8a-6622-11e6-8346-4de63e5ebb36.png)
+
+
+[demo体验](http://demo.react-d.com/#/?_k=qgj3q0)
 
 ## Installation
 
@@ -26,34 +36,34 @@ Open url `http://127.0.0.1:8080/` in browser.
 
 
 # Components
-计划中的组件，后续应该会不断加入新的组件
+Components of the plan, the subsequent will continue to add new components
 
  - [x] Button
- - [ ] Input 
- - [ ] grid
+ - [x] Input 
+ - [x] grid
  - [x] Switch
  - [ ] Numberbox 
  - [ ] Checkbox 
  - [ ] Select
- - [ ] ActionSheet
+ - [x] ActionSheet
  - [ ] Tabbar
- - [ ] Dialog 
- - [ ] Toast 
+ - [x] Dialog 
+ - [x] Toast 
  - [ ] Popover 
- - [ ] Carousel 
+ - [x] Carousel 
  - [ ] Popover
  - [ ] Navigation
  - [ ] Spiner
  - [ ] Datepicker 
  - [ ] Processbar 
- - [ ] Searchbar 
+ - [x] Searchbar 
  - [ ] ShareGroup
 
 
 # Change log
 
 
-## 项目结构
+## Project Structure
 ```react-ui
    |-- example  
    |-- lib
@@ -72,3 +82,10 @@ Open url `http://127.0.0.1:8080/` in browser.
    |-- package.json
    `-- webpack.config.js
 ```
+
+## Welcome
+
+* Star
+* Fork
+* PR
+* Issue
