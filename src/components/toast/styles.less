@@ -1,0 +1,62 @@
+@-webkit-keyframes bounceIn { /* 默认 */
+    0% {opacity: 0; -webkit-transform: scale(.5); transform: scale(.5) }
+    100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1) }
+}
+.f-toast{
+	position: fixed;
+    z-index: 3;
+    width: 7.6em;
+    min-height: 7.6em;
+    top: 150px;
+    left: 50%;
+    margin-left: -3.8em;
+    background: rgba(40,40,40,.75);
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; 
+    -webkit-animation-duration: .10s; 
+    animation-duration: .10s;
+
+    animation-name: bounceIn;
+    -webkit-animation-name: bounceIn;
+
+    .f-toast-icon{
+    	margin: 15px 0 0;
+	    display: block;
+	    color: #fff;
+	    font-size: 45px;
+    }
+
+    .f-toast-content{
+    	margin: 0 0 15px;
+    }
+}
+
+.f-toast.ft-bt{
+    min-height: 2.5em;
+    width: 10em;
+    margin-left: -5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .f-toast-content{
+        margin: 0;
+    }
+
+    .f-toast-icon{
+        margin: -2px 5px 0;
+        font-size: 15px;
+    }
+}
+.toast-top{
+    top: 40px;
+}
+
+.toast-bottom{
+    top: inherit;
+    bottom: 40px;
+}
