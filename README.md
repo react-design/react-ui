@@ -1,4 +1,4 @@
-# react-ionic
+# react-ui
 Based on the react to maintain a set of ionic style of reusable component library    
 
 [React-design](http://www.react-d.com)
