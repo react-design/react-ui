@@ -5,6 +5,17 @@ order: 1
 ---
 
 ## react-ui 介绍
+{% raw %}
+    <div id="example"></div>333
+    <script type="text/babel">
+      var fruits =  require('fruit-ui');
+      console.log(fruits);
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+{% endraw %}
 ## 基本样式
 ### 样式统一
 ### 基础设置
@@ -20,12 +31,4 @@ order: 1
 
 
 
-{% raw %}
-    <div id="example"></div>
-    <script type="text/babel">
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('example')
-      );
-    </script>
-{% endraw %}
+

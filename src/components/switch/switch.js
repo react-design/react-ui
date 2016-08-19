@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './styles.less';
 import classNames from 'classnames';
 
 export default class Switch extends React.Component {
