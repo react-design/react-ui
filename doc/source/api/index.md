@@ -1,31 +1,40 @@
 ---
-title: Quick start
+title: 介绍
 type: api
-order: 1
+order: 0
 ---
 
-## react-ui 介绍
-## 基本样式
-### 样式统一
-### 基础设置
-### 文字排版
-## 布局相关
-## 网格 Grid
-### 简介
-## 按钮 Button
-### 尺寸
-### 激活状态
-### 禁用状态
+Based on the react to maintain a set of ionic style of reusable component library
+## 示例
+![二维码扫一扫][1]
+[在线demo][2]
+
+## 特性
+- 基于react维护的一套ionic风格的可复用组件库
+- 组件简洁，易于组合
+
+## 版本
+
+- 开发版 [![npm version](https://img.shields.io/npm/v/fruit-ui.svg?style=flat)](https://www.npmjs.com/package/fruit-ui)
+
+## 兼容性
+
+- 谷歌浏览器
+- Safari
+
+## 链接
+
+- Button 按钮
+- Icon 图标
+- Grid 栅格布局
+- Switch 开关
+- Dialog 对话
+- Toast
+- SearchBar 搜索框
+- Carousel 轮播图
+- ActionSheet
+
+[1]: https://cloud.githubusercontent.com/assets/9276376/17802302/06531f8a-6622-11e6-8346-4de63e5ebb36.png
+[2]: http://demo.react-d.com/
 
 
-
-
-{% raw %}
-    <div id="example"></div>
-    <script type="text/babel">
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('example')
-      );
-    </script>
-{% endraw %}

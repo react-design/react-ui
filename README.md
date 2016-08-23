@@ -1,5 +1,10 @@
 # react-ui
 Based on the react to maintain a set of ionic style of reusable component library    
+## Installation
+
+```
+npm install fruit-ui
+```
 
 [React-design](http://www.react-d.com)
 
@@ -12,7 +17,7 @@ Based on the react to maintain a set of ionic style of reusable component librar
 
 [demo体验](http://demo.react-d.com/#/?_k=qgj3q0)
 
-## Installation
+## Downloads
 
 ```
 git clone https://github.com/react-design/react-ui.git
