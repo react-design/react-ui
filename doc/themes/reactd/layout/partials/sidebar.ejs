@@ -2,6 +2,7 @@
     <ul class="main-menu">
         <%- partial('partials/main_menu') %>
     </ul>
+    
     <div class="list">
         <h2>
 			<% titles = {api: 'API', examples: '示例', guide: '教程'} %>
@@ -11,12 +12,14 @@
             </select>
         </h2>
         <ul class="menu-root">
-            <% type !== 'api' && site.pages.find({type: type}).sort('order').each(function (p) { %>
+            <% type !== 'ap' && site.pages.find({type: type}).sort('order').each(function (p) { %>
                 <li>
                     <a href="/<%- p.path %>" class="sidebar-link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><%- p.title %></a>
+                    <div style="display:none;"><%- p %></div>
                 </li>
             <% }) %>
         </ul>
+        <ul class="sub-menu"></ul>
 <!--         <div id="donate">
             <span class="wrapper" style="width: 72px">
               <img src="/images/weixinpay.png">

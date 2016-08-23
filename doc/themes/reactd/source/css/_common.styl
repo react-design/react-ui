@@ -23,16 +23,25 @@ h1, h2, h3, h4, strong
 code, pre
     font-family $code-font
     font-size $code-font-size
-    background-color $codebg
     -webkit-font-smoothing initial
     -moz-osx-font-smoothing initial
 
 code
-    color #e96900
-    padding 3px 5px
-    margin 0 2px
-    border-radius 2px
-    white-space nowrap
+    border none;
+    margin 0;
+    font-size 13px;
+    color #666;
+    overflow auto;
+
+pre 
+    background-color $codebg;
+    padding 1em;
+    margin .5em 0;
+    overflow auto; 
+    border-left 1px solid #89B1D4;  
+    
+    
+    
 
 em
     color $light
