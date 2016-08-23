@@ -33,6 +33,10 @@ $header-height = 40px
     &:hover, &.current
         border-bottom 3px solid $green
 
+.content
+    li
+        list-style-type circle;
+
 #search-query
     height 30px
     line-height 30px
@@ -116,6 +120,8 @@ $header-height = 40px
         padding-left 0
     .menu-sub
         font-size .85em
+    .sub-menu 
+        padding-left 0
     .sidebar-link
         color $light
         &.current
@@ -332,3 +338,48 @@ $header-height = 40px
             margin-left 0
     iframe
         margin: 0 !important
+
+
+
+
+.comp-button
+    .f-btn
+        margin-left 5px;
+        margin-top 5px;
+
+
+
+
+.comp-icon
+    li
+        list-style-type none;
+        display inline-block;
+        min-width 140px;
+        padding 1em 0;
+        margin 10px;
+        text-align center;
+        transition all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        border-radius 5px;
+        [class^=fi-],code
+            display block;
+        [class^=fi-]
+            font-size 24px;
+            margin-bottom 10px;
+
+    li:hover
+        background gray;
+        color white;
+        cursor pointer;
+        code 
+            color white;
+
+
+
+
+
+
+
+
+
+
+
