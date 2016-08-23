@@ -44,10 +44,10 @@ order: 2
 
 	<Button icon="fi-left-open f-left">default</Button>
     <Button icon="fi-right-open f-right">default</Button>
-    <Button icon="fi-spin animate-spin" plain type="info">info</Button>
-    <Button icon="fi-spin2 animate-spin" block type="primary">primary</Button>
-    <Button icon="fi-attention" disabled type="warn">warn</Button>
-    <Button icon="fi-home" small type="danger">danger</Button>
+    <Button icon="fi-spin animate-spin" type="primary">primary</Button>
+    <Button icon="fi-spin2 animate-spin" type="primary">primary</Button>
+    <Button icon="fi-attention" type="warn">warn</Button>
+    <Button icon="fi-home" type="danger">danger</Button>
 
 
 ## 块
@@ -73,7 +73,7 @@ order: 2
 
 *源码*
 
-	<Button disabled>default</Button>
+	<Button disabled="true">default</Button>
     <Button disabled type="info">info</Button>
     <Button disabled type="primary">primary</Button>
     <Button disabled type="warn">warn</Button>
@@ -93,6 +93,25 @@ order: 2
     <Button small type="primary">primary</Button>
     <Button small type="warn">warn</Button>
     <Button small type="danger">danger</Button>
+
+## API
+
+通过设置 Button 的属性来产生不同的按钮样式
+
+属性如下：
+
+| 属性        | 说明           | 类型  | 默认值  |
+| ---- |:-------------:| -----:|
+| type     | 可选值为：default、info、primary、warn、danger | string | default（不填也为default）
+| plain    | 设置按钮是否为简单按钮      |   string或空 | 增加plain属性时有效
+| icon | 设置按钮的图标     |    string | ''
+| block | 设置按钮是否为块级      |    string或空 | 增加block属性时有效
+| disabled | 设置按钮是否被禁用      |    string或空 | 增加disabled属性时有效
+| small | 设置按钮是否为小型按钮      |    string或空 | 增加small属性时有效
+
+
+
+
 
 
 {% raw %}
@@ -122,7 +141,10 @@ order: 2
             <div>
                 <Button icon="fi-left-open f-left">default</Button>
                 <Button icon="fi-right-open f-right">default</Button>
-
+                <Button icon="fi-spin animate-spin" type="primary">primary</Button>
+                <Button icon="fi-spin2 animate-spin" type="primary">primary</Button>
+                <Button icon="fi-attention" type="warn">warn</Button>
+                <Button icon="fi-home" type="danger">danger</Button>
             </div>,
             document.getElementById('button_ex3')
         );
@@ -139,6 +161,10 @@ order: 2
         ReactDOM.render(
             <div>
                 <Button disabled="true">default</Button>
+                <Button disabled type="info">info</Button>
+                <Button disabled type="primary">primary</Button>
+                <Button disabled type="warn">warn</Button>
+                <Button disabled type="danger">danger</Button>
             </div>,
             document.getElementById('button_ex5')
         );
