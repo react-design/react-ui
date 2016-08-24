@@ -11,7 +11,8 @@
         <link rel="icon" href="/images/logo.png" type="image/x-icon">
         <link href="/fruit-ui/dist/f-ui.css" rel='stylesheet' type='text/css'>        
         <script>
-            window.PAGE_TYPE = "<%- page.type %>"
+            window.PAGE_TYPE = "<%- page.type %>";
+            window.pageName = '';
         </script>
         <%- css(isIndex ? 'css/index' : 'css/page') %>
         <%- partial('partials/ga') %>
@@ -29,6 +30,7 @@
         <% if (!isIndex) { %>
             <%- partial('partials/header') %>
             
+            <!-- <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> -->
             <div id="main">
                 <% if (page.blog_index) { %>
                     <%- partial('partials/blog') %>
@@ -36,11 +38,11 @@
                     <%- body %>
                 <% } %>
             </div>
-            <!-- <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> -->
             <script src="/js/smooth-scroll.min.js"></script>
             <script src="/js/common.js"></script>
             <script src="/js/browser.js"></script>
             <script src="/fruit-ui/lib/bundle.js"></script>
+            <!-- <script type="text/babel" src="/js/lc.js"></script> -->
         <% } else { %>
             <%- body %>
         <% } %>

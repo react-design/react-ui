@@ -37,4 +37,3 @@ Based on the react to maintain a set of ionic style of reusable component librar
 [1]: https://cloud.githubusercontent.com/assets/9276376/17802302/06531f8a-6622-11e6-8346-4de63e5ebb36.png
 [2]: http://demo.react-d.com/
 
-

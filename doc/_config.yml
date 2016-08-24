@@ -87,11 +87,12 @@ exclude_generator:
 markdown:
   gfm: true
   pedantic: false
-  sanitize: false
+  sanitize: true
   tables: true
   breaks: true
   smartLists: true
-  smartypants: true
+  smartypants: false
+
 
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
