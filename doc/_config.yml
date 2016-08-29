@@ -27,7 +27,7 @@ public_dir: public
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-auto_spacing: false # Add spaces between asian characters and western characters
+auto_spacing: true # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 max_open_file: 100
@@ -37,7 +37,7 @@ render_drafts: false
 post_asset_folder: false
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   tab_replace:
 
 # Category & Tag
@@ -87,11 +87,12 @@ exclude_generator:
 markdown:
   gfm: true
   pedantic: false
-  sanitize: false
+  sanitize: true
   tables: true
   breaks: true
   smartLists: true
-  smartypants: true
+  smartypants: false
+
 
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
