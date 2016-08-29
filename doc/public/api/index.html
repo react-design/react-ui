@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Quick start - React Design</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = "api"
+        </script>
+        <link rel="stylesheet" href="/css/page.css">
+        <!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46852172-1', 'react-d.com');
+  ga('send', 'pageview');
+</script> -->
+
+        <script src="//cdn.bootcss.com/react/15.2.1/react.min.js"></script>
+				<script src="//cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/">
+        <img src="/images/logo.png">
+        <span>React Design</span>
+    </a>
+    <ul id="nav">
+        <!-- <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li> -->
+<li><a href="/api/" class="nav-link current">API</a></li>
+<li><a href="#" class="nav-link">RNUI</a></li>
+<li><a href="http://demo.react-d.com/#/?_k=qgj3q0" target="_blank" class="nav-link">Demo</a></li>
+<li><a href="#" class="nav-link">讨论</a></li>
+<li><a href="https://github.com/react-design/react-ui" class="nav-link">Github</a></li>
+<!-- <li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/react-design/react-ui" class="nav-link" target="_blank">GitHub</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+
+            <div id="main">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <!-- <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li> -->
+<li><a href="/api/" class="nav-link current">API</a></li>
+<li><a href="#" class="nav-link">RNUI</a></li>
+<li><a href="http://demo.react-d.com/#/?_k=qgj3q0" target="_blank" class="nav-link">Demo</a></li>
+<li><a href="#" class="nav-link">讨论</a></li>
+<li><a href="https://github.com/react-design/react-ui" class="nav-link">Github</a></li>
+<!-- <li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/react-design/react-ui" class="nav-link" target="_blank">GitHub</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>
+			
+			API
+            <select class="version-select">
+                <option selected>0.5</option>
+            </select>
+        </h2>
+        <ul class="menu-root">
+            
+        </ul>
+<!--         <div id="donate">
+            <span class="wrapper" style="width: 72px">
+              <img src="/images/weixinpay.png">
+              <a>打个赏</a>
+            </span>
+        </div> -->
+    </div>
+</div>
+
+
+<div class="content api with-sidebar">
+    <!-- <div id="ad">
+  <span>Proudly sponsored by</span>
+  <br>
+  <a href="https://strikingly.com/s/careers?utm_source=v" target="_blank"
+    style="display:inline-block;padding-top:8px">
+    <img src="/images/strikingly.png">
+  </a>
+</div> -->
+
+    <h1>Quick start</h1>
+    <h2 id="react-ui-介绍"><a href="#react-ui-介绍" class="headerlink" title="react-ui 介绍"></a>react-ui 介绍</h2><h2 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h2><h3 id="样式统一"><a href="#样式统一" class="headerlink" title="样式统一"></a>样式统一</h3><h3 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h3><h3 id="文字排版"><a href="#文字排版" class="headerlink" title="文字排版"></a>文字排版</h3><h2 id="布局相关"><a href="#布局相关" class="headerlink" title="布局相关"></a>布局相关</h2><h2 id="网格-Grid"><a href="#网格-Grid" class="headerlink" title="网格 Grid"></a>网格 Grid</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><h2 id="按钮-Button"><a href="#按钮-Button" class="headerlink" title="按钮 Button"></a>按钮 Button</h2><h3 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h3><h3 id="激活状态"><a href="#激活状态" class="headerlink" title="激活状态"></a>激活状态</h3><h3 id="禁用状态"><a href="#禁用状态" class="headerlink" title="禁用状态"></a>禁用状态</h3>
+    <div id="example"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('example')
+      );
+    </script>
+
+
+    
+    <!-- <div class="footer">
+      发现错误？想参与编辑？
+      <a href="https://github.com/react-design/react-ui/" target="_blank">
+        在 Github 上编辑此页！
+      </a>
+    </div> -->
+</div>
+
+                
+            </div>
+            <!-- <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> -->
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+            <script src="/js/browser.js"></script>
+        
+
+
+    </body>
+</html>

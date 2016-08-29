@@ -19,7 +19,8 @@
     "pretest": "npm run lint",
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm run test -- --watch",
-    "coverage": "npm run lint & istanbul cover _mocha -- --compilers js:babel-core/register --recursive"
+    "coverage": "npm run lint & istanbul cover _mocha -- --compilers js:babel-core/register --recursive",
+		"deploy" : "tar -czvf dist.tar.gz dist && scp dist.tar.gz root@123.56.129.175:/data/www/reactd"
   },
   "repository": {
     "type": "git",

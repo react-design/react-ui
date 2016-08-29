@@ -4,3 +4,4 @@ db.json
 *.log
 node_modules/
 .deploy*/
+dist.tar.gz
