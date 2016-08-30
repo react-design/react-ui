@@ -1,5 +1,5 @@
 # react-ui
-Based on the react to maintain a set of ionic style of reusable component library    
+Based on the react to maintain a set of ionic style of reusable component library [document](http://www.react-d.com/api/) 
 ## Installation
 
 ```
