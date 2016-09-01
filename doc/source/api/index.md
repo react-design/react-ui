@@ -58,7 +58,7 @@ ReactDOM.render(<Button />, node);
 ### 浏览器引入
 在index.html中，引入f-ui.css
 ``` js
-import 'dist/fruit-ui.css'; 
+import 'dist/fruit-ui.css';
 ```
 
 ## Button 按钮
@@ -339,7 +339,7 @@ import 'dist/fruit-ui.css';
 ``` js
 React.createClass({
   getInitialState: function() {
-    return {show_top: false, show_normal:false}; 
+    return {show_top: false, show_normal:false};
   },
   topShowHandle: function() {
     var self = this;
@@ -480,5 +480,3 @@ React.createClass({
   }
 });
 ```
-
-

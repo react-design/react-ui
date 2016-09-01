@@ -113,16 +113,21 @@ code,
 pre {
   font-family: 'Roboto Mono', Monaco, courier, monospace;
   font-size: 0.8em;
-  background-color: #f8f8f8;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
 }
 code {
-  color: #e96900;
-  padding: 3px 5px;
-  margin: 0 2px;
-  border-radius: 2px;
-  white-space: nowrap;
+  border: none;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  overflow: auto;
+}
+pre {
+  background-color: #f8f8f8;
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
 }
 em {
   color: #7f8c8d;
@@ -168,7 +173,6 @@ a.button:hover {
 }
 .highlight .code pre {
   padding: 1.2em 1.4em;
-  line-height: 1.5em;
   margin: 0;
 }
 .highlight.html .code:after,
@@ -805,8 +809,8 @@ body {
   height: 678px;
   background: url("../images/iphone.png") no-repeat;
   background-size: 100%;
-  zoom: 0.6;
-  padding: 162px 90px 163px 90px;
+  zoom: 0.9;
+  padding: 113px 60px 113px 60px;
 }
 .main-svg .desc .desc-info {
   display: flex-item;

@@ -73,8 +73,9 @@
     var isAPI = document.querySelector('.content').classList.contains('api')
     if (currentPageAnchor || isAPI) {
       var allHeaders = []
-      var sectionContainer
-      if (isAPI) {
+      var sectionContainer;
+      var subMenuContainer = document.querySelector('.sub-menu');
+      if (!isAPI) {
         sectionContainer = document.querySelector('.menu-root')
       } else {
         sectionContainer = document.createElement('ul')
@@ -82,7 +83,6 @@
         currentPageAnchor.parentNode.appendChild(sectionContainer)
       }
       var headers = content.querySelectorAll('h2')
-
       if (headers.length) {
         each.call(headers, function (h) {
           sectionContainer.appendChild(makeLink(h))
@@ -103,7 +103,7 @@
 
       var animating = false
       sectionContainer.addEventListener('click', function (e) {
-        e.preventDefault()
+        // e.preventDefault()
         if (e.target.classList.contains('section-link')) {
           sidebar.classList.remove('open')
           setActive(e.target)
