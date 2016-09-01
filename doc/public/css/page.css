@@ -113,16 +113,21 @@ code,
 pre {
   font-family: 'Roboto Mono', Monaco, courier, monospace;
   font-size: 0.8em;
-  background-color: #f8f8f8;
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
 }
 code {
-  color: #e96900;
-  padding: 3px 5px;
-  margin: 0 2px;
-  border-radius: 2px;
-  white-space: nowrap;
+  border: none;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  overflow: auto;
+}
+pre {
+  background-color: #f8f8f8;
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
 }
 em {
   color: #7f8c8d;
@@ -168,7 +173,6 @@ a.button:hover {
 }
 .highlight .code pre {
   padding: 1.2em 1.4em;
-  line-height: 1.5em;
   margin: 0;
 }
 .highlight.html .code:after,
@@ -483,6 +487,9 @@ ul.demo li {
 .nav-link.current {
   border-bottom: 3px solid #5b73f0;
 }
+.content li {
+  list-style-type: circle;
+}
 #search-query {
   height: 30px;
   line-height: 30px;
@@ -575,6 +582,9 @@ ul.demo li {
 }
 .sidebar .menu-sub {
   font-size: 0.85em;
+}
+.sidebar .sub-menu {
+  padding-left: 0;
 }
 .sidebar .sidebar-link {
   color: #7f8c8d;
@@ -845,4 +855,77 @@ ul.demo li {
   iframe {
     margin: 0 !important;
   }
+}
+.comp-button .f-btn {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.comp-icon li {
+  list-style-type: none;
+  display: inline-block;
+  min-width: 140px;
+  padding: 1em 0;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  border-radius: 5px;
+}
+.comp-icon li [class^=fi-],
+.comp-icon li code {
+  display: block;
+}
+.comp-icon li [class^=fi-] {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.comp-icon li:hover {
+  background: #808080;
+  color: #fff;
+  cursor: pointer;
+}
+.comp-icon li:hover code {
+  color: #fff;
+}
+.comp-grid .row {
+  margin-bottom: 6px;
+}
+.comp-grid .row .f-col,
+.comp-grid .row >div {
+  text-align: center;
+  border-radius: 0px;
+  color: #fff;
+  margin: 2px;
+  height: 40px;
+  line-height: 40px;
+}
+.comp-grid .row .color-1 {
+  background-color: #1fc8db;
+}
+.comp-grid .row .color-2 {
+  background-color: #42afe3;
+}
+.comp-grid .row .color-3 {
+  background-color: #97cd76;
+}
+.comp-grid .row .color-4 {
+  background-color: #fce473;
+  color: #808080;
+}
+.comp-grid .row .color-5 {
+  background-color: #ed6c63;
+}
+.comp-toast .f-btn {
+  margin-right: 5px;
+}
+table {
+  width: 100%;
+}
+table tr th,
+table tr td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+table tr th {
+  font-weight: bold;
+  background: #eee;
 }

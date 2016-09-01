@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
 	"script" : {
-		"deploy" : "tar -czvf public.tar.gz dist && scp dist.tar.gz root@123.56.129.175:/data/www/reactd"
+		"deploy" : "tar -czvf public.tar.gz public && scp dist.tar.gz root@123.56.129.175:/data/www/reactd"
 	},
   "hexo": {
     "version": "3.2.2"

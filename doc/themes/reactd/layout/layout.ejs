@@ -9,17 +9,21 @@
         <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
         <link rel="icon" href="/images/logo.png" type="image/x-icon">
-        <link href="/fruit-ui/f-ui.css" rel='stylesheet' type='text/css'>        
+        <link href="/fruit-ui/f-ui.css" rel='stylesheet' type='text/css'>
         <script>
             window.PAGE_TYPE = "<%- page.type %>";
             window.pageName = '';
         </script>
         <%- css(isIndex ? 'css/index' : 'css/page') %>
-        <%- partial('partials/ga') %>
-
-        <script src="//cdn.bootcss.com/react/15.2.1/react.min.js"></script>
-		<script src="//cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
-        
+				<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "//hm.baidu.com/hm.js?e3a1a3434bce6385e0e9688d1097b1d5";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+				</script>
     </head>
     <body>
 
@@ -29,20 +33,24 @@
         </div>
         <% if (!isIndex) { %>
             <%- partial('partials/header') %>
-            
-            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+
+            <!-- <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> -->
             <div id="main">
-                <% if (page.blog_index) { %>
-                    <%- partial('partials/blog') %>
+                <% if (page.f_dis) { %>
+                    <%- partial('partials/dis') %>
                 <% } else { %>
                     <%- body %>
                 <% } %>
             </div>
+
+        <script src="//cdn.bootcss.com/react/15.2.1/react.min.js"></script>
+		<script src="//cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
             <script src="/js/smooth-scroll.min.js"></script>
             <script src="/js/common.js"></script>
             <script src="/js/browser.js"></script>
             <script src="/fruit-ui/bundle.js"></script>
             <script type="text/babel" src="/js/lc.js"></script>
+
         <% } else { %>
             <%- body %>
         <% } %>
