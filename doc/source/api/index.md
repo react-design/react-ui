@@ -5,7 +5,7 @@ order: 0
 ---
 
 ## 介绍
-
+![logo](https://cloud.githubusercontent.com/assets/9276376/18077980/92747c60-6ebb-11e6-9a6c-e65bfe42d45e.png)
 Based on the react to maintain a set of ionic style of reusable component library
 
 ### 示例
@@ -22,8 +22,7 @@ Based on the react to maintain a set of ionic style of reusable component librar
 
 ### 兼容性
 
-- 谷歌浏览器
-- Safari
+- 主流浏览器
 
 ### 链接
 

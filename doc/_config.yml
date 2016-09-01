@@ -93,7 +93,7 @@ markdown:
   smartLists: true
   smartypants: false
 
-
+duoshuo_shortname : reactd
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
